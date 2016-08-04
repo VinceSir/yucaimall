@@ -8,33 +8,6 @@
     <link rel="stylesheet" type="text/css" href="theme/css/shop-info.css"/>
     <script type="text/javascript" src="theme/js/jquery-1.12.1.min.js"></script>
     <script type="text/javascript" src="theme/js/jquery.imagezoom.min.js"></script>
-    <script>
-        $(function () {
-            var com_size = $("#com_size").val();		//当前的购买商品数量默认值
-            $(".add_btn").click(function () {			//每点击一次
-                com_size++;
-                $("#com_size").val(com_size);
-            });
-            $(".rmover_btn").click(function () {
-                if (com_size <= 1) {				//如果购买数量少于1那么不执行
-                    alert("购买数量不能少于1！");
-                } else {
-                    com_size--;
-                    $("#com_size").val(com_size);
-                }
-            });
-
-            $(".li_title1").click(function () {
-                if ($(this).hasClass("li_like")) {
-                    $(this).removeClass("li_like");
-                    $(this).siblings("dl").slideUp();
-                } else {
-                    $(this).addClass("li_like");
-                    $(this).siblings("dl").slideDown();
-                }
-            });
-        });
-    </script>
 </head>
 
 <body>
