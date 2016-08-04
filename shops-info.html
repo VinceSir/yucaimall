@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>商品详情</title>
+    <link rel="stylesheet" href="theme/css/reset.css">
+    <link rel="stylesheet" href="theme/css/public.css">
+    <link rel="stylesheet" type="text/css" href="theme/css/shop-info.css"/>
+    <script type="text/javascript" src="theme/js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="theme/js/jquery.imagezoom.min.js"></script>
+    <script>
+        $(function () {
+            var com_size = $("#com_size").val();		//当前的购买商品数量默认值
+            $(".add_btn").click(function () {			//每点击一次
+                com_size++;
+                $("#com_size").val(com_size);
+            });
+            $(".rmover_btn").click(function () {
+                if (com_size <= 1) {				//如果购买数量少于1那么不执行
+                    alert("购买数量不能少于1！");
+                } else {
+                    com_size--;
+                    $("#com_size").val(com_size);
+                }
+            });
+
+            $(".li_title1").click(function () {
+                if ($(this).hasClass("li_like")) {
+                    $(this).removeClass("li_like");
+                    $(this).siblings("dl").slideUp();
+                } else {
+                    $(this).addClass("li_like");
+                    $(this).siblings("dl").slideDown();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+<div class="center">
+    <div id="crumbs">
+        <a href="javascript:;">首页</a>
+        <em>&gt;</em>
+        <span>商品分类</span>
+    </div>
+
+    <div class="center shop-info-container">
+        <div class="box">
+            <div class="tb-booth tb-pic tb-s310">
+                <a href="images/01.jpg"><img src="theme/images/01_mid.jpg" alt="" rel="theme/images/01.jpg" class="jqzoom"/></a>
+            </div>
+            <ul class="tb-thumb" id="thumblist">
+                <li class="tb-selected">
+                    <div class="tb-pic tb-s40">
+                        <a href="#"><img src="theme/images/01_small.jpg" mid="theme/images/01_mid.jpg" big="theme/images/01.jpg"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tb-pic tb-s40">
+                        <a href="#"><img src="theme/images/02_small.jpg" mid="theme/images/02_mid.jpg" big="theme/images/02.jpg"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tb-pic tb-s40">
+                        <a href="#"><img src="theme/images/03_small.jpg" mid="theme/images/03_mid.jpg" big="theme/images/03.jpg"></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tb-pic tb-s40">
+                        <a href="#"><img src="theme/images/04_small.jpg" mid="theme/images/04_mid.jpg" big="theme/images/04.jpg"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--end 放大镜-->
+        <div class="com_info">
+            <h3>云南水果玉米 无公害绿色食品 香甜可口 营养丰富 农家特产</h3>
+            <p class="ts">蔬菜专场！全场低至2折起，品质！诚信！七天无理由退换!</p>
+            <div class="info">
+                <div class="fl">
+                    <p><span>价格：</span><strong>¥36.00</strong>元 <em>原价格：400.00元</em></p>
+                    <p><span>库存：40</span></p>
+                </div>
+                <div class="fr">
+                    <p>累计销量 <i>1569</i></p>
+                    <p>累计评论 <i>998</i></p>
+                </div>
+            </div>
+            <div class="shop-type-num">
+                <div class="item-container">
+                    <span>类      型：</span>
+                    <div class="type">
+                        <label class="on"><input type="radio">大</label>
+                        <label><input type="radio">中</label>
+                        <label><input type="radio">小</label>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <span>数      量：</span>
+                    <div class="num">
+                        <a href="javascript:;" class="reduce">-</a>
+                        <input type="text" value="1">
+                        <a href="javascript:;" class="add">+</a>
+                        <em>最少2斤起采购</em>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a href="javascript:;" class="active">立即购买</a>
+                <a href="javascript:;">加入购物车</a>
+            </div>
+            <div class="share-collection">
+                <a href="javascript:;" class="collection"><i></i>关注宝贝</a>
+                <!--关注过后给 i 添 on 样式-->
+                <div class="bdsharebuttonbox">
+                    <span>分享到：</span>
+                    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+                    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+                    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+                </div>
+                <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+            </div>
+        </div>
+        <div class="com_yy"></div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="center shop-center">
+
+        <div class="fl sidebar">
+            <div class="shop-class">
+                <h2>店铺分类</h2>
+                <ul>
+                    <li><a href="javascript:;">玉米 <i>&gt;</i></a></li>
+                    <li><a href="javascript:;">白菜<i>&gt;</i></a></li>
+                    <li><a href="javascript:;">通心菜<i>&gt;</i></a></li>
+                    <li><a href="javascript:;">地瓜<i>&gt;</i></a></li>
+                </ul>
+            </div>
+            <div class="recommend">
+                <h2>看了又看</h2>
+                <ul>
+                    <li>
+                        <a href="javascript:;" class="shop-img">
+                            <img src="theme/images/shop-info-img.jpg" alt="">
+                        </a>
+                        <p><a href="javascript:;">新鲜大白菜1颗 约1kg 黄白菜青菜 新鲜蔬菜</a></p>
+                        <p><em>￥54.00</em></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="shop-img">
+                            <img src="theme/images/shop-info-img.jpg" alt="">
+                        </a>
+                        <p><a href="javascript:;">新鲜大白菜1颗 约1kg 黄白菜青菜 新鲜蔬菜</a></p>
+                        <p><em>￥54.00</em></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="shop-img">
+                            <img src="theme/images/shop-info-img.jpg" alt="">
+                        </a>
+                        <p><a href="javascript:;">新鲜大白菜1颗 约1kg 黄白菜青菜 新鲜蔬菜</a></p>
+                        <p><em>￥54.00</em></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="shop-tab-container fr">
+            <div class="tab-title-container">
+                <ul>
+                    <li class="tab-title-item on">商品介绍</li>
+                    <li class="tab-title-item">商品评价(90)</li>
+                </ul>
+            </div>
+
+            <div class="tab-center-container ">
+                <div class="tab-center-item">
+                    <div class="specifications">
+                        <ul>
+                            <li>商品名称：水果玉米</li>
+                            <li>商品编号：15864</li>
+                            <li>品牌：水果玉米</li>
+                            <li>商品产地：开化</li>
+                            <li>产品类型：农产品</li>
+                            <li>包装方式：其他</li>
+                            <li>储存方式：干爽通风储存</li>
+                            <li>联系供货商：15888888888</li>
+                        </ul>
+                    </div>
+                    <div class="shop-info-center">
+                        <img src="theme/images/shop-info-maximg.jpg" alt="">
+                    </div>
+                </div>
+                <div class="tab-center-item"></div>
+            </div>
+
+            <div class="tab-center-container on">
+                <div class="comment">
+                    <div class="comment-head">
+                        <label for="" class="on"><input type="radio">全部</label>
+                        <label for=""><input type="radio">图片<i>(2834)</i></label>
+                        <label for=""><input type="radio">好评<i>(2834)</i></label>
+                        <label for=""><input type="radio">中评<i>(2834)</i></label>
+                        <label for=""><input type="radio">差评<i>(2834)</i></label>
+                    </div>
+                    <div class="comment-list-container">
+                        <ul>
+                            <li>
+                                <div class="u-head fl">
+                                    <a href="javascript:;">
+                                        <img src="theme/images/comment-user-head.png" alt="">
+                                    </a>
+                                    <p>渔菜网</p>
+                                </div>
+                                <div class="comment-info fl">
+                                    <p>好次好次好好次！麻辣鲜香高潮迭起！初恋的味道！！掌柜人也超好，送了很多套套，这样吃起来就既安全又卫生，不容易得病啦！</p>
+                                    <div class="im-container">
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                    </div>
+                                    <p class="date">2016年05月7日 22：00</p>
+                                    <div class="reply">商家回复：谢谢您么么哒</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="u-head fl">
+                                    <a href="javascript:;">
+                                        <img src="theme/images/comment-user-head.png" alt="">
+                                    </a>
+                                    <p>渔菜网</p>
+                                </div>
+                                <div class="comment-info fl">
+                                    <p>好次好次好好次！麻辣鲜香高潮迭起！初恋的味道！！掌柜人也超好，送了很多套套，这样吃起来就既安全又卫生，不容易得病啦！</p>
+                                    <div class="im-container">
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                    </div>
+                                    <p class="date">2016年05月7日 22：00</p>
+                                    <div class="reply">商家回复：谢谢您么么哒</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="u-head fl">
+                                    <a href="javascript:;">
+                                        <img src="theme/images/comment-user-head.png" alt="">
+                                    </a>
+                                    <p>渔菜网</p>
+                                </div>
+                                <div class="comment-info fl">
+                                    <p>好次好次好好次！麻辣鲜香高潮迭起！初恋的味道！！掌柜人也超好，送了很多套套，这样吃起来就既安全又卫生，不容易得病啦！</p>
+                                    <div class="im-container">
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                    </div>
+                                    <p class="date">2016年05月7日 22：00</p>
+                                    <div class="reply">商家回复：谢谢您么么哒</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="u-head fl">
+                                    <a href="javascript:;">
+                                        <img src="theme/images/comment-user-head.png" alt="">
+                                    </a>
+                                    <p>渔菜网</p>
+                                </div>
+                                <div class="comment-info fl">
+                                    <p>好次好次好好次！麻辣鲜香高潮迭起！初恋的味道！！掌柜人也超好，送了很多套套，这样吃起来就既安全又卫生，不容易得病啦！</p>
+                                    <div class="im-container">
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                        <a href="javascript:;"><img src="theme/images/comment-img.png" alt=""></a>
+                                    </div>
+                                    <p class="date">2016年05月7日 22：00</p>
+                                    <div class="reply">商家回复：谢谢您么么哒</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div id="page">
+                            <a href="javascript:;" class="page">上一页</a>
+                            <a href="javascript:;" class="active">1</a>
+                            <a href="javascript:;">2</a>
+                            <a href="javascript:;">3</a>
+                            <a href="javascript:;">4</a>
+                            <a href="javascript:;">5</a>
+                            <span>...</span>
+                            <a href="javascript:;" class="page next">下一页</a>
+                            共245页 跳至 <input type="text"> 页 <input type="button" class="page-btn" value="跳转">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footer-tp">
+        <div class="center">
+            <img src="theme/images/foor-img.png" alt="">
+        </div>
+    </div>
+    <div class="footer-bt">
+        <p>苏ICP备14034590号｜食品流通许可证编号：sp3100001310001023</p>
+        <p>Copyright © 2016  渔菜网yucaimall.com 版权所有</p>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    //tab plugins 插件
+    $(function(){
+        $(".jqzoom").imagezoom();
+        $("#thumblist li a").hover(function () {
+            $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+            $(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+            $(".jqzoom").attr('rel', $(this).find("img").attr("big"));
+        });
+
+        //商品 num 加减
+        $(".reduce,.add").on('click',function () {
+            var _text = $(this).siblings("input"),
+                _number = parseInt(_text.val()),
+                _this = $(this).attr("class");
+
+            if(_this == 'add'){
+                if (isNaN(_number))
+                    _number = 1;
+                ++_number;
+            }else {
+                if (isNaN(_number))
+                    _number = 1;
+                if (_number <= 1)
+                    return;
+                --_number;
+            }
+            _text.val(_number);
+        });
+
+        $(".tab-title-item").on('click',function(){
+            var _in = $(this).index();
+            $(this).addClass('on').siblings().removeClass('on');
+            $(".tab-center-container").eq(_in).addClass('on').siblings().removeClass('on');
+        });
+    });
+</script>
+
+</body>
+</html>
