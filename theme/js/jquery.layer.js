@@ -7,13 +7,16 @@
 /*
 *
 * 自定义html层
+*
+* _area 可以是字符串宽度，高度自动，也可是数组 [宽，高]，
 * */
-function layerCustom(html) {
+function layerCustom(html,_area) {
     layer.open({
         type: 1,
         title: false,
-        closeBtn: 2,
+        closeBtn: 0,
         shadeClose: true,
+        area:_area,
         content:html
     });
 }

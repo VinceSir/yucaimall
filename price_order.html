@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="theme/css/reset.css">
     <link rel="stylesheet" href="theme/css/public.css">
     <link rel="stylesheet" href="theme/css/cart.css">
-    <script type="text/javascript" src="theme/js/jquery-1.12.1.min.js"></script>
 </head>
 <body>
 <div class="site-nav">
@@ -220,9 +219,11 @@
                     <i>15999967691</i>
                 </p>
             </div>
-            <a class="a_buy_btn fr">结算</a>
+            <div class="center btn-container">
+                <a class="a_buy_btn">结算</a>
+            </div>
         </div>
-        <div class="hot_product clear">
+        <div class="hot_product">
             <div class="hot_product_top">
                 <b class="fl change">商家热卖</b>
                 <a class="fr change" href="javascript:;">
@@ -297,6 +298,11 @@
         </div>
     </div>
 </div>
+
+
+<script type="text/javascript" src="theme/js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="theme/layer/layer.js"></script>
+<script type="text/javascript" src="theme/js/jquery.layer.js"></script>
 <script>
     $(function () {
         $(document).on("click",".address li",function () {
@@ -332,6 +338,25 @@
             _text.val(_number);
         });
 
+
+        $(".new_addbtn").on('click',function () {
+            var _html = '<div id="address-layer"><h2>添加地址</h2><div class="add-address-list"><ul><li><div class="title">所在地区<i>*</i>：</div><div class="form-center"><select class="sf"><option>请选择省份</option></select><select><option>请选择城市</option></select></div></li><li><div class="title">详细地址<i>*</i>：</div><div class="form-center"><input type="text"></div></li><li><div class="title">邮政编码：</div><div class="form-center"><input type="text"></div></li><li><div class="title">收货人姓名<i>*</i>：</div><div class="form-center"><input type="text"></div></li><li><div class="title">手机号码<i>*</i>：</div><div class="form-center"><input type="text"></div></li><li><div class="title">电话号码：</div><div class="form-center"><input type="text"class="qh fl"><input type="text"class="zj fl"><div class="clear"><label for=""><input type="checkbox">设置为默认收货地址</label></div></div></li></ul><div class="btn-center"><a href="javascript:;"class="sub-btn">保存并选定</a></div></div></div>';
+            layerCustom(_html,['400px']);
+
+            var _addressList = '';
+                    _addressList +='<li class="other_adr">',
+                    _addressList +='<p class="address_title">',
+                    _addressList +='<span>浙江</span>',
+                    _addressList +='<i class="a_city">杭州</i>',
+                    _addressList +='<span class="p_l40">(<i>王二</i>收)</span>',
+                    _addressList +='</p>',
+                    _addressList +='<p class="p_t10">余杭闲林竹海水韵阳光谷花园 荷塘轩 1-6号</p>',
+                    _addressList +='<p class="p_t10">15999967691</p>',
+                    _addressList +='<p class="p_t10"><a class="a_modidy" href="javascript:;">修改</a></p>',
+                    _addressList +='<img src="theme/images/isSelect.png" class="fr isSelect">',
+                    _addressList +=' <input type="radio" value=""></li>';
+            $(".address").append(_addressList);
+        })
     });
 </script>
 </body>

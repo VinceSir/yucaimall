@@ -94,6 +94,10 @@
     text-align: center;
     border-radius: 5px;
     margin-top: 15px;
+    cursor: pointer;
+}
+.new_addbtn:hover{
+    text-decoration: none;
 }
 .confirm_order{
     margin-top: 18px;
@@ -188,8 +192,12 @@
 .order_last p:nth-child(3){
     margin-bottom: 15px;
 }
+.btn-container{
+    text-align: right;
+    margin-bottom: 135px;
+}
 .a_buy_btn{
-    display: block;
+    display: inline-block;
     background-color: #fc4607;
     width: 140px;
     height: 40px;
@@ -198,73 +206,100 @@
     text-align: center;
     font-size: 18px;
     border-radius: 5px;
-    margin-bottom: 135px;
 }
-.hot_product{
-    border-top: 2px solid #46994b;
-}
-.hot_product_top{
-    padding: 0 15px;
+
+
+/*添加地址弹框*/
+#address-layer{
+    width: 400px;
     overflow: hidden;
+    background: #FFF;
+}
+#address-layer h2{
     height: 40px;
+    background: #218928;
+    color: #FFF;
+    padding: 0 10px;
+    font-size:16px;
     line-height:40px;
 }
-.hot_product_top b{
-    font-size: 14px;
-    color: #333333;
-    font-weight: bold;
-}
-.hot_product_top a{
-    font-size:14px;
-    color: #666;
-}
-.hot_product_top a i{
-    margin-right:5px;
-}
-.center-tj{
-    overflow: hidden;
+#address-layer .add-address-list{
     width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
 }
-.hot_product_list{
-    font-size: 12px;
-    width: 105%;
-}
-.hot_product_list .shop-img{
+#address-layer .add-address-list ul{
+    overflow: hidden;
     display: block;
 }
-.hot_product_list .com-name{
-    line-height:20px;
-    height: 40px;
-}
-.hot_product_list .com-name a{
-    color: #333;
-}
-.hot_product_list li{
-    width:230px;
-    height: 360px;
-    border: 1px solid #aaa;
-    float: left;
-    margin-right:10px;
-}
-.hot_product_list li p{
-    padding: 5px 10px;
+#address-layer .add-address-list ul li{
     overflow: hidden;
 }
-.back_number{
-    background-color: #218928;
-    display: inline-block;
-    width: 80px;
-    height: 24px;
-    line-height: 24px;
-    color: #fff;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 12px;
+#address-layer .add-address-list ul li .title{
+    width: 115px;
+    float: left;
+    height:32px;
+    line-height:32px;
+    text-align: right;
+    font-size:14px;
+    color: #333;
+    margin-bottom:10px;
 }
-.sold{
+#address-layer .add-address-list ul li .title i{
+    color: #F00;
+}
+#address-layer .add-address-list ul li .form-center{
+    float: left;
+    overflow: hidden;
+    width: 275px;
+}
+#address-layer .add-address-list ul li .form-center input[type='text']{
+    height:30px;
+    line-height:30px;
+    width: 240px;
+}
+#address-layer .add-address-list ul li .form-center input.qh{
+    width: 38px;
+    margin-right:10px;
+    text-align: center;
+}
+#address-layer .add-address-list ul li .form-center input.zj{
+    width: 170px;
+}
+#address-layer .add-address-list ul li .form-center input,#address-layer .add-address-list ul li .form-center select,#address-layer .add-address-list ul li .form-center textarea{
+    padding: 0 10px;
+    border: 1px solid #d9d9d9;
+}
+#address-layer .add-address-list ul li .form-center select{
+    height: 32px;
+    line-height:32px;
+    padding:0 5px;
+    float: left;
+    width: 102px;
+}
+#address-layer .add-address-list ul li .form-center select.sf{
+    width: 150px;
+    margin-right:10px;
+}
+#address-layer .add-address-list ul li label{
+    font-size:12px;
     color: #999;
 }
-.star_shop{
-    width: 13%;
+#address-layer .add-address-list ul li label input{
     vertical-align: middle;
+}
+#address-layer .add-address-list .btn-center{
+    padding-left:115px;
+    margin-top:20px;
+}
+#address-layer .add-address-list .btn-center .sub-btn{
+    display: block;
+    width: 100px;
+    height: 28px;
+    border-radius: 5px;
+    text-align: center;
+    line-height:28px;
+    color: #FFF;
+    font-size:12px;
+    background: #fc4607;
 }

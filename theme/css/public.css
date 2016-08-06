@@ -344,3 +344,58 @@
 .layerAlert .layui-layer-btn a {
   background: #218928;
 }
+
+/* 底部推荐 */
+.hot_product {
+  border-top: 2px solid #46994b;
+}
+.hot_product .hot_product_top {
+  padding: 0 15px;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+}
+.hot_product .hot_product_top b {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+.hot_product .hot_product_top a {
+  font-size: 14px;
+  color: #666;
+}
+.hot_product .hot_product_top a i {
+  margin-right: 5px;
+}
+.hot_product .center-tj {
+  overflow: hidden;
+  width: 100%;
+}
+.hot_product .hot_product_list {
+  font-size: 12px;
+  width: 105%;
+}
+.hot_product .hot_product_list .shop-img {
+  display: block;
+}
+.hot_product .hot_product_list .com-name {
+  line-height: 20px;
+  height: 40px;
+}
+.hot_product .hot_product_list .com-name a {
+  color: #333;
+}
+.hot_product .hot_product_list li {
+  width: 230px;
+  height: 360px;
+  border: 1px solid #aaa;
+  float: left;
+  margin-right: 10px;
+}
+.hot_product .hot_product_list li p {
+  padding: 5px 10px;
+  overflow: hidden;
+}
+.hot_product .sold {
+  color: #999;
+}
