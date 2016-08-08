@@ -1,4 +1,46 @@
 .pay {
   width: 1200px;
   margin: 0 auto;
+  border-top: 1px solid #d9d9d9;
+  color: #333;
+}
+.pay .pay-success-container {
+  margin: 100px auto;
+  border: 1px solid #d9d9d9;
+  width: 678px;
+  height: 228px;
+}
+.pay .pay-success-container .pay-success-title {
+  text-align: center;
+  background: #fafafa;
+  padding: 30px 0;
+  height: 68px;
+}
+.pay .pay-success-container .pay-success-title h1 {
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 44px;
+}
+.pay .pay-success-container .pay-success-title h1 i {
+  display: inline-block;
+  background: url("../images/pay-success-icon.png");
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.pay .pay-success-container .pay-success-title p {
+  font-size: 12px;
+  line-height: 24px;
+}
+.pay .pay-success-container .pay-success-links {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+.pay .pay-success-container .pay-success-links a {
+  color: #fc4607;
+  font-size: 12px;
+  margin: 0 20px;
 }
