@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="theme/css/reset.css">
+    <link rel="stylesheet" href="theme/css/public.css">
+    <link rel="stylesheet" href="theme/css/cart.css">
+    <script src="theme/js/jquery-1.12.1.min.js"></script>
+</head>
+<body>
+
+<div class="shopping-cart">
+    <div class="center">
+        <h1 class="page-title">全部商品</h1>
+
+        <div class="commodity">
+            <div class="list-title">
+                <div class="list-check"><label for=""><input type="checkbox" class="selectAll">全选</label></div>
+                <div class="list-info">商品信息</div>
+                <div class="list-qt">单价（元）</div>
+                <div class="list-qt">数量</div>
+                <div class="list-qt">小计（元）</div>
+            </div>
+            <div class="list-center">
+                <div class="shop-title">
+                    <label for=""><input type="checkbox">店铺：南汇果蔬农产品店</label>
+                </div>
+                <div class="list-container">
+                    <div class="list-check"><label for=""><input type="checkbox"></label></div>
+                    <div class="list-info">
+                        <a href="javascript:;" class="commodity-img">
+                            <img src="theme/images/cart-list-img.jpg" alt="">
+                        </a>
+                        <div class="fl">
+                            <p class="commodity-name">鲁花5S一级花生油5.436L 食用油 赠送900ml花生油</p>
+                            <p class="type clear"><span>颜色分类：中辣</span></p>
+                        </div>
+                    </div>
+                    <div class="list-qt">58.00</div>
+                    <div class="list-qt">
+                        <div class="num-container">
+                            <a href="javascript:;" class="reduce">-</a>
+                            <input type="text" value="1">
+                            <a href="javascript:;" class="add">+</a>
+                        </div>
+                    </div>
+                    <div class="list-qt">小计（元）</div>
+                </div>
+                <div class="list-container">
+                    <div class="list-check"><label for=""><input type="checkbox"></label></div>
+                    <div class="list-info">
+                        <a href="javascript:;" class="commodity-img">
+                            <img src="theme/images/cart-list-img.jpg" alt="">
+                        </a>
+                        <div class="fl">
+                            <p class="commodity-name">鲁花5S一级花生油5.436L 食用油 赠送900ml花生油</p>
+                            <p class="type clear"><span>颜色分类：中辣</span></p>
+                        </div>
+                    </div>
+                    <div class="list-qt">58.00</div>
+                    <div class="list-qt">
+                        <div class="num-container">
+                            <a href="javascript:;" class="reduce">-</a>
+                            <input type="text" value="1">
+                            <a href="javascript:;" class="add">+</a>
+                        </div>
+                    </div>
+                    <div class="list-qt">小计（元）</div>
+                </div>
+            </div>
+
+            <div class="list-center">
+                <div class="shop-title">
+                    <label for=""><input type="checkbox">店铺：南汇果蔬农产品店</label>
+                </div>
+                <div class="list-container">
+                    <div class="list-check"><label for=""><input type="checkbox"></label></div>
+                    <div class="list-info">
+                        <a href="javascript:;" class="commodity-img">
+                            <img src="theme/images/cart-list-img.jpg" alt="">
+                        </a>
+                        <div class="fl">
+                            <p class="commodity-name">鲁花5S一级花生油5.436L 食用油 赠送900ml花生油</p>
+                            <p class="type clear"><span>颜色分类：中辣</span></p>
+                        </div>
+                    </div>
+                    <div class="list-qt">58.00</div>
+                    <div class="list-qt">
+                        <div class="num-container">
+                            <a href="javascript:;" class="reduce">-</a>
+                            <input type="text" value="1">
+                            <a href="javascript:;" class="add">+</a>
+                        </div>
+                    </div>
+                    <div class="list-qt">小计（元）</div>
+                </div>
+                <div class="list-container">
+                    <div class="list-check"><label for=""><input type="checkbox"></label></div>
+                    <div class="list-info">
+                        <a href="javascript:;" class="commodity-img">
+                            <img src="theme/images/cart-list-img.jpg" alt="">
+                        </a>
+                        <div class="fl">
+                            <p class="commodity-name">鲁花5S一级花生油5.436L 食用油 赠送900ml花生油</p>
+                            <p class="type clear"><span>颜色分类：中辣</span></p>
+                        </div>
+                    </div>
+                    <div class="list-qt">58.00</div>
+                    <div class="list-qt">
+                        <div class="num-container">
+                            <a href="javascript:;" class="reduce">-</a>
+                            <input type="text" value="1">
+                            <a href="javascript:;" class="add">+</a>
+                        </div>
+                    </div>
+                    <div class="list-qt">小计（元）</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="center total-container">
+            <div class="fl">
+                <label for=""><input type="checkbox" class="selectAll">全选</label>
+                <a href="javascript:;" class="clearBtn">删除</a>
+                <span>已选商品 <i>0</i> 件</span>
+            </div>
+            <div class="fr">
+                合计（不含运费）:<strong>¥333.00</strong>
+                <input type="submit" class="sub_btn" value="确定">
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    $(function () {
+        //商品 num 加减
+        $(".reduce,.add").on('click',function () {
+            var _text = $(this).siblings("input"),
+                    _number = parseInt(_text.val()),
+                    _this = $(this).attr("class");
+
+            if(_this == 'add'){
+                if (isNaN(_number))
+                    _number = 1;
+                ++_number;
+            }else {
+                if (isNaN(_number))
+                    _number = 1;
+                if (_number <= 1)
+                    return;
+                --_number;
+            }
+            _text.val(_number);
+        });
+
+
+        //全选
+        $(".selectAll").on('click',function () {
+            var _state = $(this).prop('checked');
+            $(".shopping-cart").find("input[type='checkbox']").prop("checked",_state);
+            _total();
+
+        });
+
+        // 商家全选
+        $(".shop-title").on('click',function () {
+            var _state = $(this).find("input[type='checkbox']").prop('checked')
+            $(this).siblings('.list-container').find("input[type='checkbox']").prop('checked',_state)
+            _total();
+        })
+
+        //删除
+        $(".clearBtn").on('click',function () {
+            $(".list-container").find("input[type='checkbox']").each(function () {
+                if($(this).prop("checked")){
+                    $(this).parents(".list-container").remove();
+                }
+            });
+            $(".list-center").each(function () {
+                var _len = $(this).find(".list-container").length;
+                if(_len == 0){
+                    $(this).remove();
+                }
+            });
+
+            _total();
+        });
+
+        //统计数量
+        function _total() {
+            var i = 0;
+            $(".commodity").find(".list-container input[type='checkbox']").each(function () {
+                if($(this).prop("checked")){
+                    i++;
+                }
+            });
+            $(".total-container").find('i').text(i);
+        }
+
+    });
+</script>
+</body>
+</html>
