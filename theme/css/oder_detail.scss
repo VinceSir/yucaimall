@@ -1,0 +1,309 @@
+.order_top{
+  border-bottom: none;
+ .order_t_m{
+   margin-top: 10px;
+ }
+}
+.order_main_current{
+margin-top: 38px;
+margin-bottom: 35px;
+  p{
+    color: #999;
+    font-size: 12px;
+  }
+  .order_process{
+    width: 816px;
+    margin: 40px auto;
+  }
+}
+.order_main_info{
+  margin: 0;
+.table_ul{
+  border: 1px solid #d9d9d9;
+  overflow: hidden;
+  li{
+    font-size: 12px;
+    color: #333;
+  }
+  .o_m_info_li1{
+    width: 350px;
+    border-right: 1px solid #d9d9d9;
+   .li_p1{
+      background-color: #fafafa;
+      height: 45px;
+      line-height: 45px;
+      border-bottom: 1px solid #d9d9d9;
+      padding-left: 15px;
+    }
+    .li_adrress{
+      border-bottom: 1px solid #d9d9d9;
+      width: 90%;
+      margin:0px auto;
+     padding: 29px 0;
+      span{
+        display: inline-block;
+        width: 82%;
+      }
+    }
+    .li_invoice{
+      padding-left: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      p{
+        line-height: 28px;
+      }
+    }
+  }
+  .o_m_info_li12{
+    overflow: hidden;
+   .li_div{
+     background: url("../images/vertical_car.png") left no-repeat;
+     height: 250px;
+     width: 50%;
+     margin: 0 auto;
+     div{
+       width: 80%;
+       position: relative;
+       left: 30px;
+       top: 60px;
+       p{
+         line-height: 28px;
+         a{
+           margin-left:35px ;
+           display: inline-block;
+           text-align: center;
+           width: 62px;
+           text-decoration: none;
+           cursor: pointer;
+         }
+         .current_a,a:hover{
+           border: 1px solid #d9d9d9;
+           background-color: #eee;
+         }
+       }
+       .m_15{
+         margin-top: 15px;
+       }
+     }
+   }
+  }
+}
+  .font_c_fc4607{
+    color: #fc4607;
+  }
+}
+.pro_detail{
+  margin-top:25px;
+  table{
+    width: 100%;
+    border-right: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    th{
+      line-height: 40px;
+      font-size: 12px;
+      color: #aaa;
+    }
+    tr{
+      font-size: 14px;
+    }
+    td, th{
+      border-bottom: 2px solid #46994b;
+      vertical-align: middle;
+      border-bottom: 1px solid #d9d9d9;
+    }
+    td img{
+      margin: 8px 15px
+    }
+    .tr_t1{
+    background-color: #e8f3e9;
+      height:48px;
+      line-height: 48px;
+      font-size: 12px;
+      td{
+        padding: 0 18px;
+      }
+      .font_c_999{
+        color: #999;
+      }
+    }
+    .b_shop_dec{
+      display: inline-block;
+      width: 80%;
+      color: #d9d9d9;
+      margin-top: 5px;
+    }
+    .w_460{
+      width: 460px;
+    }
+  }
+}
+.order_foot{
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 12px;
+  li{
+    padding: 0 15px;
+  }
+ .foot_li2{
+   span{
+  color: #aaa;
+    }
+  i{
+    font-size: 18px;
+    color: #fc4607;
+  }
+  }
+}
+
+.third_confrim_pro{
+  margin-top: 5px;
+font-size: 12px;
+  .p_t5{
+    padding-top: 5px;
+  }
+  .li_left_p{
+    width: 55px;
+    text-align: right;
+    margin-right: 5px;
+  }
+}
+.third_c_block1{
+  background-color: #eee;
+  height: 140px;
+  ul{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 12px;
+    padding: 20px 0;
+    li{
+      line-height: 25px;
+      div{
+        color: #999;
+      }
+      a{
+        color: #fc4607;
+      }
+    }
+  }
+}
+.third_c_block2{
+  background-color: #fff7eb;
+  border:1px solid #fc4607 ;
+  margin-top: 20px;
+  ul{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 12px;
+    overflow: hidden;
+    padding-bottom: 18px;
+    .li1{
+      font-size: 14px;
+      color: #404040;
+      border-bottom: 1px solid #ccc;
+      font-weight: bold;
+      padding-top:12px;
+      padding-bottom: 7px;
+      margin-bottom: 15px;
+    }
+    li{
+      line-height: 28px;
+    }
+  }
+  .receipt_pro{
+    color: #ff5500;
+  }
+  .logistics_info{
+    border: 1px solid #2ca2f8;
+    background-color: #e5f5ff;
+    height: 25px;
+    line-height: 25px;
+    width:470px;
+   img{
+     vertical-align: middle;
+     padding-left: 10px;
+   }
+  }
+}
+.confirm_recept{
+  ul{
+  width: 998px;
+  border-bottom: 1px solid #ccc;
+  padding:34px 10px 30px 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  li{
+    line-height: 25px;
+  }
+  }
+ .confirm_r_info{
+  font-size: 12px;
+   color: #999;
+   margin-bottom: 50px;
+   a{
+     color: #999;
+     cursor: pointer;
+     }
+   p{
+     line-height: 25px;
+   }
+   button{
+     background-color: #dd2222;
+     width: 80px;
+     height: 32px;
+     line-height: 32px;
+     color: #fff;
+     text-align: center;
+     border: none;
+     border-radius: 5px;
+     margin-top: 15px;
+   }
+ }
+}
+.pup_box{
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  min-height: 100%;
+  top:0;
+  left:0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0,0,0.3) 100%, rgba(0, 0,0,0.3) 100%);
+  background-image:      -o-linear-gradient(left, rgba(0, 0,0,0.3) 100%, rgba(0, 0,0,0.3) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0,0,0.3)), to(rgba(0, 0,0,0.3)));
+  background-image:         linear-gradient(to right, rgba(0, 0,0,0.3) 100%, rgba(0, 0,0,0.3) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=0.3);
+  display: none;
+}
+.confirm_box{
+  background-color: #fff;
+  width: 240px;
+  height: 122px;
+  margin: 20% auto;
+  border-radius: 5px;
+  text-align: center;
+  .c_top_p{
+    height:54px;
+    line-height: 54px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .m_t20{
+    margin-top: 20px;
+  }
+  a{
+    display: inline-block;
+    border: 1px solid #fc4607;
+    color: #fc4607;
+    background-color: #fff;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
