@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="theme/css/reset.css">
     <link rel="stylesheet" href="theme/css/public.css">
     <link rel="stylesheet" type="text/css" href="theme/css/shop-info.css"/>
-    <script type="text/javascript" src="theme/js/jquery-1.12.1.min.js"></script>
-    <script type="text/javascript" src="theme/js/jquery.imagezoom.min.js"></script>
 </head>
 
 <body>
@@ -291,7 +289,39 @@
     </div>
 </div>
 
+<!--弹窗登录-->
+<div class="layer" style="display: none">
+    <div id="layer-login">
+        <div class="layer-title">
+            <h1>登录</h1>
+            <a href="javascript:;" id="clear_btn"></a>
+        </div>
+        <div class="layer-center">
+            <p>账户登录</p>
+            <div class="form-list">
+                <i class="user"></i>
+                <input type="text" placeholder="用户名">
+            </div>
+            <div class="form-list">
+                <i class="pass"></i>
+                <input type="password" placeholder="密码">
+            </div>
 
+            <div class="reg">
+                <a href="javascript:;" class="fl">忘记登录密码?</a>
+                <a href="javascript:;" class="fr">免费注册</a>
+            </div>
+            <div class="login-btn-center">
+                <input type="button" class="login-btn" value="登录">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="theme/js/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="theme/js/jquery.imagezoom.min.js"></script>
+<script type="text/javascript" src="theme/layer/layer.js"></script>
+<script type="text/javascript" src="theme/js/jquery.layer.js"></script>
 <script type="text/javascript">
     //tab plugins 插件
     $(function(){
@@ -326,6 +356,14 @@
             var _in = $(this).index();
             $(this).addClass('on').siblings().removeClass('on');
             $(".tab-center-container").eq(_in).addClass('on').siblings().removeClass('on');
+        });
+        
+        $(".btn-container").find(".active").on('click',function () {
+            layerCustom($('.layer').html(),['350px']);
+        });
+
+        $(document).on('click',"#clear_btn",function () {
+            layer.closeAll()
         });
     });
 </script>
