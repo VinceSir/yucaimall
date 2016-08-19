@@ -93,4 +93,178 @@
       }
     }
   }
+  .u-main-center{
+    width: 960px;
+    float: right;
+
+
+    //主页
+    &.u-index{
+      .u-center-top{
+        background: #fafafa;
+        padding: 10px 20px;
+        overflow: hidden;
+
+        .user-info-container{
+          width: 473px;
+          border-right:2px solid #aaa;
+          overflow: hidden;
+          float: left;
+          padding: 10px 0;
+
+          .us-header{
+            width: 84px;
+            height: 84px;
+            display: block;
+            float: left;
+            border-radius: 50%;
+            margin-right:24px;
+
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          p{
+            font-size:12px;
+            color: #666;
+            line-height:24px;
+
+            &.name{
+              font-size:14px;
+              color: #333;
+            }
+
+            &.modify{
+              margin-top:10px;
+
+              a{
+                color: #fc4607;
+              }
+            }
+          }
+        }
+        .user-info-dynamic{
+          float: left;
+          margin-left:20px;
+          width: 425px;
+          padding: 10px 0;
+        
+          .title{
+            font-size:14px;
+            line-height:16px;
+            
+            a{
+              font-size:12px;
+              color: #666;
+            }
+          }
+
+          .order-container{
+            margin-top:10px;
+            overflow: hidden;
+
+            img{
+              float: left;
+              width: 60px;
+              height: 60px;
+              margin-right:10px;
+            }
+
+            p{
+              font-size:12px;
+              color: #999;
+              line-height:20px;
+            
+              a{
+                color: #fc4607;
+              }
+            }
+          }
+        }
+      }
+
+      .list-container{
+        width: 100%;
+        margin-top:20px;
+        border-top:2px solid #218928;
+        padding-top:10px;
+
+        .title{
+          height:32px;
+          line-height:24px;
+          padding: 0 20px;
+
+          h2{
+            color:#000;
+            font-weight: bold;
+            font-size:14px;
+          }
+          a{
+            color: #999;
+            font-size:12px;
+
+            i{
+              display: inline-block;
+              vertical-align: middle;
+              margin-left:5px;
+
+              &.us_refresh-icon{
+                background: url("../images/us_refresh_icon.png");
+                width: 14px;
+                height: 12px;
+              }
+            }
+          }
+        }
+
+        .list-center{
+          width: 100%;
+
+          ul{
+            display: block;
+            overflow: hidden;
+
+            li{
+              width: 218px;
+              float: left;
+              margin: 0 11px;
+
+              .com-img{
+                display: block;
+                width: 218px;
+
+                img{
+                  display: block;
+                  width: 216px;
+                  height: 216px;
+                  border: 1px solid #d9d9d9;
+                  margin-bottom:10px;
+                }
+              }
+
+              p{
+                line-height:16px;
+                font-size:12px;
+                &,& a{
+                  color: #333;
+                }
+
+                &.name{
+                  height: 32px;
+                  margin-bottom:5px;
+                }
+
+                strong{
+                  color: #fc4607;
+                  font-size:14px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
