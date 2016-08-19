@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>用户中心-个人资料修改</title>
+    <title>用户中心-密码修改</title>
     <link rel="stylesheet" href="theme/css/reset.css">
     <link rel="stylesheet" href="theme/css/public.css">
     <link rel="stylesheet" href="theme/css/user.css">
+    <link rel="stylesheet" href="theme/layer/skin/layer.css">
 </head>
 <body>
 <div class="site-nav">
@@ -91,77 +92,42 @@
                 <h3><a href="javascript:;">积分商城</a></h3>
             </div>
         </div>
-        <div class="u-main-center u-edit-info">
-            <div class="edit-info-center">
+        <div class="u-main-center u-modify-pass">
+            <div class="modify-pass-center">
                 <div class="page-title">
-                    <h1>个人资料</h1>
+                    <h1>修改密码</h1>
                 </div>
 
                 <div class="form-center">
-                    <p class="prompt">亲爱的<b>喵**咪</b>，填写真实的资料，有助于及时收到购买的商品。</p>
                     <div class="from-list">
-                        <div class="form-title">当前头像：</div>
-                        <div class="form-list-center">
-                            <a href="javascript:;" class="header-upload">
-                                <img src="theme/images/u-uhead.png" alt="">
-                                <p>编辑头像</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="from-list">
-                        <div class="form-title">昵称：</div>
+                        <div class="form-title">输入当前登录密码</div>
                         <div class="form-list-center">
                             <input type="text">
-                            <p class="error">hhhhhh</p>
+                            <p class="error">错误</p>
                         </div>
                     </div>
                     <div class="from-list">
-                        <div class="form-title">真实姓名：</div>
+                        <div class="form-title">输入新登录密码</div>
                         <div class="form-list-center">
                             <input type="text">
+                            <p class="error">错误</p>
                         </div>
                     </div>
                     <div class="from-list">
-                        <div class="form-title">性别：</div>
+                        <div class="form-title">再次确认输入</div>
                         <div class="form-list-center">
-                            <label for="man"><input type="radio" id="man" name="sex">男</label>
-                            <label for="woman"><input type="radio" id="woman" name="sex">女</label>
-                        </div>
-                    </div>
-                    <div class="from-list">
-                        <div class="form-title">出生年月：</div>
-                        <div class="form-list-center">
-                            <select>
-                                <option>2016年</option>
-                            </select>
-                            <select>
-                                <option>08月</option>
-                            </select>
-                            <select>
-                                <option>07日</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="from-list">
-                        <div class="form-title">居住地：</div>
-                        <div class="form-list-center">
-                            <select>
-                                <option>浙江省</option>
-                            </select>
-                            <select>
-                                <option>衢州市</option>
-                            </select>
-                            <select>
-                                <option>开化县</option>
-                            </select>
-                            <input type="text" class="address">
+                            <input type="text">
+                            <p class="error">错误</p>
                         </div>
                     </div>
                     <div class="submit-container">
-                        <input type="submit" class="submit-btn" value="保存">
+                        <input type="button" class="submit-btn" value="保存">
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 </div>
@@ -177,5 +143,25 @@
         <p>Copyright © 2016  渔菜网yucaimall.com 版权所有</p>
     </div>
 </div>
+
+<script src="theme/js/jquery-1.12.1.min.js"></script>
+<script src="theme/layer/layer.js"></script>
+<script src="theme/js/jquery.layer.js"></script>
+<script>
+    $(function () {
+        $(".submit-btn").on('click',function () {
+            var con = {
+                text:'密码修改成功',
+                typeNum:1,
+                time:'2000',
+                fun:function () {
+                    //可选回调函数
+                }
+            }
+            iconMsg(con);
+        });
+
+    });
+</script>
 </body>
 </html>

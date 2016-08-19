@@ -48,3 +48,36 @@ function layerAlert(txt) {
 function layerLoad(time) {
     var index = layer.load(1,{time: time*1000});
 }
+
+
+/*
+*
+* 带iocn 提示层
+*
+*  text 提示文本
+* typeNum : 1 成功  2 失败  3 疑问  4 锁定  5 遗憾  6 微笑  7 警告
+*
+* */
+function iconMsg(config) {
+    var obj = {
+        text:'',
+        typeNum:'1',
+        time:'2000',
+        fun:function () {
+            // 可选
+        }
+    }
+    $.extend(true,obj,config);
+
+    layer.msg(obj.text, {
+        icon: obj.typeNum,
+        time: obj.time //2秒关闭（如果不配置，默认是3秒）
+    },function () {
+        if(obj.fun!= " " || obj.fun != null ){
+            if(typeof obj.fun == 'function'){
+                obj.fun();
+            }
+        }
+        return;
+    });
+}

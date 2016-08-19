@@ -319,6 +319,48 @@
   border-radius: 5px;
   outline: none;
 }
+.u-main .u-main-center.u-modify-pass .modify-pass-center {
+  padding: 0 10px;
+}
+.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center {
+  margin: 100px auto 0;
+  width: 380px;
+  border: 1px solid #d9d9d9;
+  padding: 60px 30px;
+}
+.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .from-list {
+  width: 380px;
+  margin-bottom: 20px;
+}
+.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .from-list .form-title {
+  width: 100px;
+  line-height: 32px;
+  text-align: right;
+}
+.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .from-list .form-list-center {
+  width: 260px;
+  margin-left: 10px;
+}
+.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .from-list .form-list-center input[type='text'] {
+  line-height: 30px;
+  border-radius: 3px;
+  height: 30px;
+  width: 240px;
+}
+.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .submit-container {
+  text-align: center;
+}
+.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .submit-container .submit-btn {
+  width: 140px;
+  height: 32px;
+  background: #fc4607;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+}
 .u-main .u-main-center .page-title {
   border-bottom: 1px solid #d9d9d9;
 }
@@ -345,4 +387,9 @@
 .u-main .u-main-center .from-list .form-list-center input[type='text'], .u-main .u-main-center .from-list .form-list-center input[type='password'], .u-main .u-main-center .from-list .form-list-center textarea {
   outline: none;
   padding: 0 10px;
+}
+.u-main .u-main-center .from-list .form-list-center .error {
+  color: #f00;
+  font-size: 12px;
+  line-height: 18px;
 }
