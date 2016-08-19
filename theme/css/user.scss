@@ -98,7 +98,7 @@
     float: right;
 
 
-    //主页
+    // 主页
     &.u-index{
       .u-center-top{
         background: #fafafa;
@@ -263,6 +263,151 @@
               }
             }
           }
+        }
+      }
+    }
+
+    // 用户资料编辑
+    &.u-edit-info{
+      .edit-info-center{
+        padding:20px 10px;
+
+        .form-center{
+          margin-top:20px;
+
+          .prompt{
+            font-size:14px;
+            color: #333;
+            margin-bottom:20px;
+
+            b{
+              font-size:16px;
+              font-weight: bold;
+              color: #fc4607;
+            }
+          }
+
+          .from-list{
+            margin-bottom:20px;
+            width: 500px;
+            
+            .form-title{
+              width: 90px;
+              height:28px;
+              line-height:28px;
+              text-align: right;
+            }
+            .form-list-center{
+              width: 400px;
+              margin-left:10px;
+
+              .header-upload{
+                display: block;
+                width: 80px;
+                height: 80px;
+                position: relative;
+
+                img{
+                  width: 100%;
+                  height: 100%;
+                }
+
+                p{
+                  position: absolute;
+                  z-index: 100;
+                  width: 100%;
+                  color: #fff;
+                  font-size:12px;
+                  text-align: center;
+                  height: 18px;
+                  line-height:18px;
+                  background: rgba(0,0,0,0.5);
+                  left: 0;
+                  bottom: 0;
+                }
+              }
+
+              label{
+                line-height:28px;
+                vertical-align: middle;
+                margin-right:10px;
+                cursor: pointer;
+
+                input[type='radio']{
+                  vertical-align: middle;
+                  margin: 0 5px 0 0;
+                }
+              }
+
+              input[type='text']{
+                height: 26px;
+                line-height:26px;
+                border-radius: 3px;
+                width: 138px;
+
+                &.address{
+                  width: 335px;
+                  margin-top:10px;
+                }
+              }
+
+              select{
+                width: 110px;
+                height:28px;
+                line-height:28px;
+                border-radius: 3px;
+                margin-right:10px;
+              }
+            }
+          }
+
+          .submit-container{
+            margin-left:100px;
+
+            .submit-btn{
+              width: 86px;
+              height: 28px;
+              background: #fc4607;
+              border: none;
+              cursor: pointer;
+              color: #FFF;
+              font-size:12px;
+              border-radius: 5px;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+
+    .page-title{
+      border-bottom:1px solid #d9d9d9;
+
+      h1{
+        font-size:16px;
+        color: #000;
+        line-height:40px;
+        font-weight: bold;
+      }
+    }
+
+    .from-list{
+      overflow: hidden;
+      font-size:12px;
+
+      .form-title{
+        float: left;
+      }
+      .form-list-center{
+        float: left;
+
+        input[type='text'],input[type='password'],select,textarea{
+          border: 1px solid #d9d9d9;
+          outline: none;
+        }
+        input[type='text'],input[type='password'],textarea{
+          outline: none;
+          padding: 0 10px;
         }
       }
     }

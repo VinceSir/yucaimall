@@ -225,3 +225,124 @@
   color: #fc4607;
   font-size: 14px;
 }
+.u-main .u-main-center.u-edit-info .edit-info-center {
+  padding: 20px 10px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center {
+  margin-top: 20px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .prompt {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .prompt b {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fc4607;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list {
+  margin-bottom: 20px;
+  width: 500px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-title {
+  width: 90px;
+  height: 28px;
+  line-height: 28px;
+  text-align: right;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center {
+  width: 400px;
+  margin-left: 10px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center .header-upload {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center .header-upload img {
+  width: 100%;
+  height: 100%;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center .header-upload p {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  height: 18px;
+  line-height: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 0;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center label {
+  line-height: 28px;
+  vertical-align: middle;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center label input[type='radio'] {
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center input[type='text'] {
+  height: 26px;
+  line-height: 26px;
+  border-radius: 3px;
+  width: 138px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center input[type='text'].address {
+  width: 335px;
+  margin-top: 10px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .from-list .form-list-center select {
+  width: 110px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .submit-container {
+  margin-left: 100px;
+}
+.u-main .u-main-center.u-edit-info .edit-info-center .form-center .submit-container .submit-btn {
+  width: 86px;
+  height: 28px;
+  background: #fc4607;
+  border: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 12px;
+  border-radius: 5px;
+  outline: none;
+}
+.u-main .u-main-center .page-title {
+  border-bottom: 1px solid #d9d9d9;
+}
+.u-main .u-main-center .page-title h1 {
+  font-size: 16px;
+  color: #000;
+  line-height: 40px;
+  font-weight: bold;
+}
+.u-main .u-main-center .from-list {
+  overflow: hidden;
+  font-size: 12px;
+}
+.u-main .u-main-center .from-list .form-title {
+  float: left;
+}
+.u-main .u-main-center .from-list .form-list-center {
+  float: left;
+}
+.u-main .u-main-center .from-list .form-list-center input[type='text'], .u-main .u-main-center .from-list .form-list-center input[type='password'], .u-main .u-main-center .from-list .form-list-center select, .u-main .u-main-center .from-list .form-list-center textarea {
+  border: 1px solid #d9d9d9;
+  outline: none;
+}
+.u-main .u-main-center .from-list .form-list-center input[type='text'], .u-main .u-main-center .from-list .form-list-center input[type='password'], .u-main .u-main-center .from-list .form-list-center textarea {
+  outline: none;
+  padding: 0 10px;
+}
