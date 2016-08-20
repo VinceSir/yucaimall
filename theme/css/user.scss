@@ -611,6 +611,173 @@
 
     }
 
+    // 我的订单
+    &.u-order-list{
+     .order-list-container{
+
+       .item-class{
+         margin-top:10px;
+         width: 100%;
+         border-bottom:1px solid #D9D9D9;
+         height:38px;
+         line-height:38px;
+         
+         ul{
+           display: block;
+           height: 38px;
+           
+           li{
+             float: left;
+
+             a{
+               display: block;
+               font-size:14px;
+               color: #999;
+               font-weight: bold;
+               padding: 0 15px;
+               height: 38px;
+             }
+
+             &:hover,&.active{
+               a{
+                 text-decoration: none;
+                 height: 37px;
+                 color: #333;
+                 border-bottom:2px solid #218928;
+               }
+             }
+           }
+         }
+       }
+
+       .order-list-center{
+         margin-top:25px;
+         border: 1px solid #d9d9d9;
+         border-bottom:0;
+         margin-bottom:50px;
+       }
+       .order-list-title{
+         border-bottom:1px solid #D9D9D9;
+         height:38px;
+         line-height:38px;
+         
+         li{
+           float: left;
+           text-align: center;
+           font-size:14px;
+           color: #333;
+
+           &.com-w-38{
+             width:38%;
+           }
+           &.com-w-14{
+             width: 14%;
+           }
+           &.com-w-10{
+             width: 10%;
+           }
+         }
+       }
+
+       .order-list-orderNumInfo{
+         height: 38px;
+         overflow: hidden;
+         padding: 0 10px;
+         line-height:38px;
+         background: #e8f3e9;
+         font-size:12px;
+         border-bottom:1px solid #c6d1c7;
+
+         p{
+           color: #999;
+
+           span{
+             margin-right:20px;
+           }
+         }
+       }
+       
+       .order-info{
+         overflow: hidden;
+
+         .order-com-list{
+           float: left;
+           width: 556px;
+
+           ul{
+             display: block;
+
+             li{
+               display: block;
+               overflow: hidden;
+               height: 60px;
+               line-height:60px;
+               font-size:12px;
+               padding: 20px 0;
+               border-bottom:1px solid #D9D9D9;
+
+               p{
+                 line-height:20px;
+
+                 a{
+                   color: #333;
+                 }
+               }
+
+               .com{
+                 padding-left:20px;
+                 width:344px;
+                 float: left;
+
+                 img{
+                   display: block;
+                   width: 58px;
+                   height: 58px;
+                   border:1px solid #D9D9D9 ;
+                   float: left;
+                   margin-right:10px;
+                 }
+               }
+               .num{
+                 float: left;
+                 width: 96px;
+                 text-align: center;
+               }
+             }
+           }
+         }
+         .order-operate{
+           float: left;
+
+           ul{
+             overflow: hidden;
+             display: block;
+
+             li{
+               float: left;
+               border-left:1px solid #D9D9D9;
+               border-bottom:1px solid #D9D9D9;
+               font-size:12px;
+               text-align: center;
+               width: 133px;
+               line-height:60px;
+
+               p{
+                 margin-top:5px;
+                 line-height:20px;
+
+                 a{
+                   color: #333;
+                 }
+               }
+             }
+           }
+         }
+       }
+     }
+    }
+
+
 
     // 公共标题
     .page-title{
