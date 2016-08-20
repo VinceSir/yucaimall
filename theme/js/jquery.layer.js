@@ -71,7 +71,7 @@ function iconMsg(config) {
 
     layer.msg(obj.text, {
         icon: obj.typeNum,
-        time: obj.time //2秒关闭（如果不配置，默认是3秒）
+        time: obj.time //   2秒关闭（如果不配置，默认是3秒）
     },function () {
         if(obj.fun!= " " || obj.fun != null ){
             if(typeof obj.fun == 'function'){
@@ -79,5 +79,34 @@ function iconMsg(config) {
             }
         }
         return;
+    });
+}
+
+
+/*
+*
+* 询问层
+*
+*   text： string  询问文本呢
+*   okFun: function  确定回调
+*   closeFun: function  取消回调，默认关闭 layer
+* */
+function confirm(obj) {
+    var conf = {
+        text:'询问层',
+        okFun:function () {
+            
+        },
+        closeFun:function () {
+
+        }
+    }
+    $.extend(true,conf,obj);
+    layer.confirm(conf.text, {
+        btn: ['确定','取消'] //按钮
+    }, function(){
+        conf.okFun();
+    }, function(){
+        conf.closeFun();
     });
 }

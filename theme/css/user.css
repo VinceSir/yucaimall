@@ -375,6 +375,129 @@
   line-height: 22px;
   color: #FFF;
 }
+.u-main .u-main-center.u-address .address-container {
+  width: 100%;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container {
+  padding: 20px 0 30px 0;
+  border-bottom: 1px solid #eee;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list {
+  margin-bottom: 20px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-title {
+  width: 80px;
+  text-align: right;
+  line-height: 32px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-title i {
+  font-size: 12px;
+  color: #F00;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center {
+  margin-left: 10px;
+  width: 400px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center input[type='text'], .u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center select, .u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center textarea {
+  border-radius: 3px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center input[type='text'] {
+  height: 30px;
+  line-height: 30px;
+  width: 240px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center select {
+  width: 120px;
+  height: 32px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center .qh, .u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center .hm {
+  float: left;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center .qh {
+  margin-right: 10px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center .qh input[type='text'] {
+  width: 68px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .from-list .form-list-center .hm input[type='text'] {
+  width: 140px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .default-checked {
+  line-height: 20px;
+  font-size: 12px;
+  padding-left: 90px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .default-checked label {
+  vertical-align: middle;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .default-checked label input {
+  vertical-align: middle;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .submit-container {
+  margin-top: 20px;
+  padding-left: 90px;
+}
+.u-main .u-main-center.u-address .address-container .add-address-container .submit-container .submit-btn {
+  border-radius: 3px;
+  background: #fc4607;
+  text-align: center;
+  color: #FFF;
+  width: 120px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container {
+  margin-top: 30px;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container h3 {
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container ul {
+  display: block;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container ul li {
+  width: 260px;
+  height: 108px;
+  float: left;
+  background: url("../images/us-address-default.png");
+  padding: 8px 13px;
+  margin: 0 10px 20px;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container ul li.active {
+  background: url("../images/us-address-checked.png");
+}
+.u-main .u-main-center.u-address .address-container .address-list-container ul li .list-top {
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 12px;
+  line-height: 29px;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container ul li .list-top b {
+  font-weight: bold;
+  margin: 0 10px 0 5px;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container ul li p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container ul li p.address-phone {
+  height: 48px;
+  margin-top: 5px;
+}
+.u-main .u-main-center.u-address .address-container .address-list-container ul li p a {
+  font-size: 12px;
+  margin: 0 5px;
+  color: #fc4607;
+}
 .u-main .u-main-center .page-title {
   border-bottom: 1px solid #d9d9d9;
 }

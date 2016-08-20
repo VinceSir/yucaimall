@@ -432,6 +432,7 @@
       }
     }
 
+    // 修改手机号码
     &.u-modify-phone{
       .form-list-center{
         .text{
@@ -449,6 +450,165 @@
           color: #FFF;
         }
       }
+    }
+
+    // 收货地址管理
+    &.u-address{
+
+      .address-container{
+        width: 100%;
+
+        // 添加地址
+        .add-address-container{
+          padding:20px 0 30px 0;
+          border-bottom:1px solid #eee;
+
+          .from-list{
+            margin-bottom:20px;
+
+            .form-title{
+              width: 80px;
+              text-align: right;
+              line-height:32px;
+
+              i{
+                font-size:12px;
+                color: #F00;
+              }
+            }
+            .form-list-center{
+              margin-left:10px;
+              width: 400px;
+
+              input[type='text'],select,textarea{
+                border-radius: 3px;
+              }
+              input[type='text']{
+                height:30px;
+                line-height:30px;
+                width: 240px;
+              }
+
+              select{
+                width: 120px;
+                height: 32px;
+                margin-right:5px;
+                margin-bottom:10px;
+              }
+
+              .qh,.hm{
+                float: left;
+              }
+              .qh{
+                margin-right:10px;
+
+                input[type='text']{
+                  width: 68px;
+                }
+              }
+              .hm{
+                input[type='text']{
+                  width: 140px;
+                }
+              }
+            }
+          }
+
+          .default-checked{
+            line-height:20px;
+            font-size:12px;
+            padding-left:90px;
+
+            label{
+              vertical-align: middle;
+
+              input{
+                vertical-align: middle;
+              }
+            }
+          }
+
+          .submit-container{
+            margin-top:20px;
+            padding-left:90px;
+
+            .submit-btn{
+              border-radius: 3px;
+              background: #fc4607;
+              text-align: center;
+              color: #FFF;
+              width: 120px;
+              height: 32px;
+              border: none;
+              cursor: pointer;
+              outline: none;
+            }
+          }
+        }
+
+        // 地址列表
+        .address-list-container{
+          margin-top:30px;
+
+          h3{
+            padding: 0 5px;
+            font-size:14px;
+            font-weight: bold;
+            line-height:24px;
+            margin-bottom:10px;
+          }
+
+          ul{
+            display: block;
+            overflow: hidden;
+            padding: 0 20px;
+
+            li{
+              width: 260px;
+              height: 108px;
+              float: left;
+              background: url("../images/us-address-default.png");
+              padding: 8px 13px;
+              margin: 0 10px 20px;
+
+              &.active{
+                background: url("../images/us-address-checked.png");
+              }
+
+              .list-top{
+                border-bottom:1px solid #d9d9d9;
+                font-size:12px;
+                line-height:29px;
+
+                b{
+                  font-weight: bold;
+                  margin: 0 10px 0 5px;
+                }
+              }
+
+              p{
+                font-size:14px;
+                line-height:24px;
+
+                &.address-phone{
+                  height: 48px;
+                  margin-top:5px;
+                }
+
+                a{
+                  font-size:12px;
+                  margin: 0 5px;
+                  color: #fc4607;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+
+
     }
 
 
