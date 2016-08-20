@@ -322,35 +322,35 @@
 .u-main .u-main-center.u-modify-pass .modify-pass-center {
   padding: 0 10px;
 }
-.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center {
+.u-main .u-main-center.u-modify-pass .form-center, .u-main .u-main-center.u-modify-phone .form-center {
   margin: 100px auto 0;
   width: 380px;
   border: 1px solid #d9d9d9;
-  padding: 60px 30px;
+  padding: 40px 80px;
 }
-.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .from-list {
+.u-main .u-main-center.u-modify-pass .form-center .from-list, .u-main .u-main-center.u-modify-phone .form-center .from-list {
   width: 380px;
   margin-bottom: 20px;
 }
-.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .from-list .form-title {
+.u-main .u-main-center.u-modify-pass .form-center .from-list .form-title, .u-main .u-main-center.u-modify-phone .form-center .from-list .form-title {
   width: 100px;
   line-height: 32px;
   text-align: right;
 }
-.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .from-list .form-list-center {
+.u-main .u-main-center.u-modify-pass .form-center .from-list .form-list-center, .u-main .u-main-center.u-modify-phone .form-center .from-list .form-list-center {
   width: 260px;
   margin-left: 10px;
 }
-.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .from-list .form-list-center input[type='text'] {
+.u-main .u-main-center.u-modify-pass .form-center .from-list .form-list-center input[type='text'], .u-main .u-main-center.u-modify-phone .form-center .from-list .form-list-center input[type='text'] {
   line-height: 30px;
   border-radius: 3px;
   height: 30px;
   width: 240px;
 }
-.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .submit-container {
+.u-main .u-main-center.u-modify-pass .form-center .submit-container, .u-main .u-main-center.u-modify-phone .form-center .submit-container {
   text-align: center;
 }
-.u-main .u-main-center.u-modify-pass .modify-pass-center .form-center .submit-container .submit-btn {
+.u-main .u-main-center.u-modify-pass .form-center .submit-container .submit-btn, .u-main .u-main-center.u-modify-phone .form-center .submit-container .submit-btn {
   width: 140px;
   height: 32px;
   background: #fc4607;
@@ -360,6 +360,20 @@
   font-size: 14px;
   border-radius: 5px;
   outline: none;
+}
+.u-main .u-main-center.u-modify-phone .form-list-center .text {
+  line-height: 32px;
+}
+.u-main .u-main-center.u-modify-phone .form-list-center .code-btn {
+  margin-top: 5px;
+  width: 80px;
+  height: 22px;
+  display: block;
+  border-radius: 3px;
+  background: #fc4607;
+  text-align: center;
+  line-height: 22px;
+  color: #FFF;
 }
 .u-main .u-main-center .page-title {
   border-bottom: 1px solid #d9d9d9;

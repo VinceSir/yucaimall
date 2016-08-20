@@ -384,52 +384,74 @@
     &.u-modify-pass{
       .modify-pass-center{
         padding: 0 10px;
+      }
+    }
+    &.u-modify-pass,&.u-modify-phone{
+      .form-center{
+        margin:100px auto 0;
+        width: 380px;
+        border: 1px solid #d9d9d9;
+        padding: 40px 80px;
 
-        .form-center{
-          margin:100px auto 0;
+        .from-list{
           width: 380px;
-          border: 1px solid #d9d9d9;
-          padding: 60px 30px;
+          margin-bottom:20px;
 
-          .from-list{
-            width: 380px;
-            margin-bottom:20px;
+          .form-title{
+            width: 100px;
+            line-height:32px;
+            text-align: right;
+          }
+          .form-list-center{
+            width:260px;
+            margin-left:10px;
 
-            .form-title{
-              width: 100px;
-              line-height:32px;
-              text-align: right;
-            }
-            .form-list-center{
-              width:260px;
-              margin-left:10px;
-
-              input[type='text']{
-                line-height:30px;
-                border-radius: 3px;
-                height: 30px;
-                width: 240px;
-              }
+            input[type='text']{
+              line-height:30px;
+              border-radius: 3px;
+              height: 30px;
+              width: 240px;
             }
           }
-          .submit-container{
-            text-align: center;
+        }
+        .submit-container{
+          text-align: center;
 
-            .submit-btn{
-              width: 140px;
-              height: 32px;
-              background: #fc4607;
-              border: none;
-              cursor: pointer;
-              color: #FFF;
-              font-size:14px;
-              border-radius: 5px;
-              outline: none;
-            }
+          .submit-btn{
+            width: 140px;
+            height: 32px;
+            background: #fc4607;
+            border: none;
+            cursor: pointer;
+            color: #FFF;
+            font-size:14px;
+            border-radius: 5px;
+            outline: none;
           }
         }
       }
     }
+
+    &.u-modify-phone{
+      .form-list-center{
+        .text{
+          line-height:32px;
+        }
+        .code-btn{
+          margin-top:5px;
+          width: 80px;
+          height: 22px;
+          display: block;
+          border-radius: 3px;
+          background: #fc4607;
+          text-align: center;
+          line-height:22px;
+          color: #FFF;
+        }
+      }
+    }
+
+
     // 公共标题
     .page-title{
       border-bottom:1px solid #d9d9d9;
