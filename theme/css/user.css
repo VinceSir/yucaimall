@@ -685,6 +685,71 @@
 .u-main .u-main-center.u-collection .collection-list-container ul li p strong {
   color: #fc3207;
 }
+.u-main .u-main-center.us-news .news-container .news-center {
+  overflow: hidden;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul {
+  display: block;
+  margin-bottom: 40px;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li {
+  display: block;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li h3 {
+  height: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li h3 i {
+  display: inline-block;
+  width: 3px;
+  height: 14px;
+  vertical-align: middle;
+  background: #218928;
+  margin-right: 10px;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li h3 .clear-btn {
+  background: url("../images/clear-btn-icon.png") no-repeat center rgba(0, 0, 0, 0.4);
+  width: 20px;
+  height: 20px;
+  float: right;
+  display: block;
+  background-size: 60%;
+  border-radius: 50%;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li p {
+  font-size: 12px;
+  color: #aaa;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li p a {
+  color: #ff4e00;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li .text {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+  text-indent: 24px;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li .com-logistics {
+  margin: 10px 0;
+  overflow: hidden;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li .com-logistics img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li .com-logistics p {
+  line-height: 24px;
+}
+.u-main .u-main-center.us-news .news-container .news-center ul li .com-logistics p a {
+  color: #333;
+}
 .u-main .u-main-center .page-title {
   border-bottom: 1px solid #d9d9d9;
 }
