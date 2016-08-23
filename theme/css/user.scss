@@ -615,41 +615,6 @@
     &.u-order-list{
      .order-list-container{
 
-       .item-class{
-         margin-top:10px;
-         width: 100%;
-         border-bottom:1px solid #D9D9D9;
-         height:38px;
-         line-height:38px;
-         
-         ul{
-           display: block;
-           height: 38px;
-           
-           li{
-             float: left;
-
-             a{
-               display: block;
-               font-size:14px;
-               color: #999;
-               font-weight: bold;
-               padding: 0 15px;
-               height: 38px;
-             }
-
-             &:hover,&.active{
-               a{
-                 text-decoration: none;
-                 height: 37px;
-                 color: #333;
-                 border-bottom:2px solid #218928;
-               }
-             }
-           }
-         }
-       }
-
        .order-list-center{
          margin-top:25px;
          border: 1px solid #d9d9d9;
@@ -777,6 +742,101 @@
      }
     }
 
+    &.u-collection{
+      .collection-container{
+        overflow: hidden;
+
+        .collection-title{
+          font-size:14px;
+          color: #333;
+          margin-top:20px;
+
+          b{
+            font-weight: bold;
+          }
+        }
+      }
+      .collection-list-container{
+        margin-top:20px;
+        
+        ul{
+          display: block;
+          overflow: hidden;
+          margin-bottom:40px;c
+          
+          li{
+            float: left;
+            display: block;
+            width: 220px;
+            margin: 0 10px;
+
+            .com-img{
+              width:218px;
+              height: 218px;
+              border: 1px solid #D9D9D9;
+              position: relative;
+
+              img{
+                width: 100%;
+                height: 100%;
+              }
+
+              .clear-btn {
+                width: 34px;
+                height: 34px;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                background:url("../images/clear-btn-icon.png") no-repeat center center rgba(0,0,0,0.5);
+
+                &:hover{
+                  background:url("../images/clear-btn-icon.png") no-repeat center center rgba(252,50,7,1);
+                }
+              }
+              p{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 34px;
+                background: rgba(0,0,0,0.3);
+                line-height:34px;
+                text-align: center;
+                font-size:14px;
+
+                &:hover{
+                  background: rgba(252,50,7,1);
+                }
+                a{
+                  color: #FFF;
+                }
+              }
+            }
+
+            p.com-name{
+              line-height:20px;
+              font-size:14px;
+              height: 40px;
+              margin-top:10px;
+
+              a{
+                color: #333;
+              }
+            }
+
+            p{
+              font-size:12px;
+              line-height:20px;
+
+              strong{
+               color: rgba(252,50,7,1);
+              }
+            }
+          }
+        }
+      }
+    }
 
 
     // 公共标题
@@ -788,6 +848,42 @@
         color: #000;
         line-height:40px;
         font-weight: bold;
+      }
+    }
+
+    // tab-title
+    .tab-title{
+      margin-top:10px;
+      width: 100%;
+      border-bottom:1px solid #D9D9D9;
+      height:38px;
+      line-height:38px;
+
+      ul{
+        display: block;
+        height: 38px;
+
+        li{
+          float: left;
+
+          a{
+            display: block;
+            font-size:14px;
+            color: #999;
+            font-weight: bold;
+            padding: 0 15px;
+            height: 38px;
+          }
+
+          &:hover,&.active{
+            a{
+              text-decoration: none;
+              height: 37px;
+              color: #333;
+              border-bottom:2px solid #218928;
+            }
+          }
+        }
       }
     }
 
