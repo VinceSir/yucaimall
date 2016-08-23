@@ -919,6 +919,91 @@
     }
 
 
+    &.us-evaluate{
+      .evaluate-container{
+        .evaluate-center{
+          width: 938px;
+          border: 1px solid #d9d9d9;
+          margin: 20px auto;
+          font-size:12px;
+
+          table{
+            width: 100%;
+            border-collapse: collapse;
+          }
+          th,td{
+            border-bottom:1px solid #D9D9D9;
+          }
+
+          th{
+            height: 38px;
+            line-height:38px;
+            background: #fafafa;
+
+            &:nth-child(1){
+              text-align: left;
+              text-indent:10px;
+            }
+            select{
+              width: 100px;
+              height: 24px;
+              outline: none;
+            }
+          }
+          tr:last-child{
+            td{
+              border-bottom: none;
+            }
+          }
+
+          td{
+            text-align: center;
+            padding: 15px 0;
+
+            i{
+              display:inline-block;
+              width: 12px;
+              height: 12px;
+              background: url("../images/evaluate-icon.png") no-repeat -17px 0;
+              &.on{
+                background: url("../images/evaluate-icon.png") no-repeat 0 0;
+              }
+            }
+
+            a{
+              display: inline-block;
+              border: 1px solid #ff4e00;
+              color: #ff4e00;
+              width: 68px;
+              height: 26px;
+              line-height:26px;
+              text-align: center;
+              border-radius: 3px;
+
+              &:hover{
+                background: #ff4e00;
+                color: #FFF;
+                text-decoration: none;
+              }
+            }
+            p{
+              text-align: left;
+              line-height:20px;
+
+              &.txt{
+                height: 40px;
+                overflow: hidden;
+              }
+            }
+            span{
+              color: #999;
+            }
+          }
+        }
+      }
+    }
+
+
     // 公共标题
     .page-title{
       border-bottom:1px solid #d9d9d9;
@@ -990,6 +1075,143 @@
           color: #f00;
           font-size:12px;
           line-height:18px;
+        }
+      }
+    }
+  }
+}
+
+.layer-container{
+  display: none;
+}
+#edit-evaluate{
+  width: 680px;
+  padding: 20px;
+  background: #FFF;
+  position: relative;
+
+  #closeBtn{
+    background: url("../images/closeBtn.png") no-repeat;
+    width: 13px;
+    height: 13px;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+
+  ul{
+    display: block;
+
+    li{
+      margin-bottom:20px;
+      overflow: hidden;
+      display: block;
+      font-size:12px;
+      color: #333;
+      
+      .title{
+        float: left;
+        width: 65px;
+        text-align: right;
+      }
+      .list-center{
+        float: left;
+        width: 615px;
+
+        .com-info{
+          padding: 10px;
+          background:#fafafa;
+          overflow: hidden;
+          
+          img{
+            width:80px;
+            height: 80px;
+            float: left;
+            margin-right:20px;
+          }
+
+          p.com-txt{
+            margin-top:10px;
+          }
+          p{
+            line-height:20px;
+          }
+          span{
+            color: #999;
+          }
+        }
+
+        .evaluate-icon{
+          float: left;
+          margin-right:20px;
+
+          i{
+            display:inline-block;
+            width: 12px;
+            height: 12px;
+            background: url("../images/evaluate-icon.png") no-repeat -17px 0;
+            &.on{
+              background: url("../images/evaluate-icon.png") no-repeat 0 0;
+            }
+          }
+        }
+
+        textarea{
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #D9D9D9;
+          resize: none;
+          outline: none;
+          width: 590px;
+          height: 80px;
+        }
+        .evaluate-img{
+          margin-top:20px;
+
+          p{
+            margin-bottom:10px;
+
+            a{
+              display: inline-block;
+              width: 78px;
+              height: 26px;
+              border: 1px solid #ff4e00;
+              color: #ff4e00;
+              background: #fff7f7;
+              text-align: center;
+              line-height:26px;
+              border-radius: 3px;
+
+              &:hover{
+                text-decoration: none;
+                color: #fff;
+                background: #ff4e00;
+              }
+            }
+          }
+          .evaluate-img-center{
+            img{
+              display: block;
+              float: left;
+              width: 60px;
+              height: 60px;
+              margin: 0 10px;
+              border-radius: 5px;
+            }
+          }
+        }
+
+        .sbm-btn{
+          width: 120px;
+          height: 32px;
+          border: 1px solid #ff4e00;
+          color: #fff;
+          background: #ff4e00;
+          text-align: center;
+          border-radius: 3px;
+          cursor: pointer;
+          outline: none;
         }
       }
     }
