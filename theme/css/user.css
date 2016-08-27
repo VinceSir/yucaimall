@@ -819,6 +819,36 @@
 .u-main .u-main-center.us-evaluate .evaluate-container .evaluate-center td span {
   color: #999;
 }
+.u-main .u-main-center.us-security .security-center {
+  font-size: 14px;
+  padding-top: 20px;
+}
+.u-main .u-main-center.us-security .security-center table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.u-main .u-main-center.us-security .security-center a {
+  color: #FC6A38;
+}
+.u-main .u-main-center.us-security .security-center p {
+  line-height: 24px;
+}
+.u-main .u-main-center.us-security .security-center h3 {
+  font-weight: bold;
+  line-height: 32px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.u-main .u-main-center.us-security .security-center table td, .u-main .u-main-center.us-security .security-center h3 {
+  border-bottom: 1px solid #CCC;
+}
+.u-main .u-main-center.us-security .security-center .table-color {
+  color: #999;
+}
+.u-main .u-main-center.us-security .security-center td {
+  line-height: 18px;
+  padding: 20px 0;
+}
 .u-main .u-main-center .page-title {
   border-bottom: 1px solid #d9d9d9;
 }

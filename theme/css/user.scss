@@ -1004,6 +1004,42 @@
     }
 
 
+    //  安全服务
+    &.us-security{
+      .security-center{
+        font-size:14px;
+        padding-top:20px;
+
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        a{
+          color: #FC6A38;
+        }
+        p{
+          line-height:24px;
+        }
+        h3{
+          font-weight: bold;
+          line-height:32px;
+          margin-top:30px;
+          margin-bottom:20px;
+        }
+        table td, h3{
+          border-bottom: 1px solid #CCC;
+        }
+        .table-color{
+          color: #999;
+        }
+        td{
+          line-height:18px;
+          padding: 20px 0;
+        }
+      }
+    }
+
     // 公共标题
     .page-title{
       border-bottom:1px solid #d9d9d9;
