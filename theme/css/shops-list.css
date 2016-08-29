@@ -1,101 +1,81 @@
 .shops-list {
-  padding-top: 20px;
-}
-.shops-list .shops-screen {
-  width: 100%;
-  overflow: hidden;
-}
-.shops-list .shops-screen .list {
-  overflow: hidden;
-  border-top: 1px dashed #d9d9d9;
-  padding: 5px 0;
-}
-.shops-list .shops-screen .list .list-title {
-  width: 80px;
-  font-size: 12px;
-  color: #999;
-  padding-left: 20px;
-}
-.shops-list .shops-screen .list .list-item {
-  width: 1100px;
-}
-.shops-list .shops-screen .list .list-item a {
-  font-size: 12px;
-  color: #333;
-  display: inline-block;
-  padding: 0 5px;
-}
-.shops-list .shops-screen .list .list-item a.active {
-  color: #fc4607;
-}
-.shops-list .shops-sort {
-  border-top: 1px solid #d9d9d9;
-  background: #fafafa;
-  padding: 10px 0;
-  overflow: hidden;
-}
-.shops-list .shops-sort .fl {
-  overflow: hidden;
-}
-.shops-list .shops-sort .fl ul {
-  display: block;
-}
-.shops-list .shops-sort .fl ul li {
-  display: block;
-  float: left;
-  font-size: 12px;
-  padding: 0 20px;
-  border-right: 1px solid #d9d9d9;
-}
-.shops-list .shops-sort .fl ul li a {
-  color: #333;
-}
-.shops-list .shops-sort .fl ul li i {
-  background: url(../images/top-icon.png) no-repeat -431px -2px;
-  display: inline-block;
-  vertical-align: middle;
-  width: 15px;
-  height: 12px;
-  margin-left: 10px;
-}
-.shops-list .shops-sort .fr {
-  font-size: 12px;
-  color: #333;
-  margin-right: 20px;
-}
-.shops-list .shop-list-container {
-  width: 100%;
-}
-.shops-list .shop-list-container ul {
-  display: block;
-  overflow: hidden;
-  width: 105%;
-}
-.shops-list .shop-list-container ul li {
-  width: 228px;
-  height: 358px;
-  float: left;
-  border: 1px solid #eee;
-  margin: 0 12px 35px 0;
-}
-.shops-list .shop-list-container ul li .info-container {
-  padding: 0 10px;
-  font-size: 12px;
-}
-.shops-list .shop-list-container ul li .info-container p {
-  color: #999;
-  line-height: 24px;
-}
-.shops-list .shop-list-container ul li .info-container p.name {
-  line-height: 20px;
-  height: 40px;
-  margin-top: 8px;
-}
-.shops-list .shop-list-container ul li .info-container p a {
-  color: #333;
-}
-.shops-list .shop-list-container ul li .info-container p strong {
-  color: #fc4607;
-  font-size: 20px;
-  font-weight: bold;
-}
+  padding-top: 20px; }
+  .shops-list .shops-screen {
+    width: 100%;
+    overflow: hidden; }
+    .shops-list .shops-screen .list {
+      overflow: hidden;
+      border-top: 1px dashed #d9d9d9;
+      padding: 5px 0; }
+      .shops-list .shops-screen .list .list-title {
+        width: 80px;
+        font-size: 12px;
+        color: #999;
+        padding-left: 20px; }
+      .shops-list .shops-screen .list .list-item {
+        width: 1100px; }
+        .shops-list .shops-screen .list .list-item a {
+          font-size: 12px;
+          color: #333;
+          display: inline-block;
+          padding: 0 5px; }
+          .shops-list .shops-screen .list .list-item a.active {
+            color: #fc4607; }
+  .shops-list .shops-sort {
+    border-top: 1px solid #d9d9d9;
+    background: #fafafa;
+    padding: 10px 0;
+    overflow: hidden; }
+    .shops-list .shops-sort .fl {
+      overflow: hidden; }
+      .shops-list .shops-sort .fl ul {
+        display: block; }
+        .shops-list .shops-sort .fl ul li {
+          display: block;
+          float: left;
+          font-size: 12px;
+          padding: 0 20px;
+          border-right: 1px solid #d9d9d9; }
+          .shops-list .shops-sort .fl ul li a {
+            color: #333; }
+          .shops-list .shops-sort .fl ul li i {
+            background: url(../images/top-icon.png) no-repeat -431px -2px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 15px;
+            height: 12px;
+            margin-left: 10px; }
+    .shops-list .shops-sort .fr {
+      font-size: 12px;
+      color: #333;
+      margin-right: 20px; }
+  .shops-list .shop-list-container {
+    width: 100%; }
+    .shops-list .shop-list-container ul {
+      display: block;
+      overflow: hidden;
+      width: 105%; }
+      .shops-list .shop-list-container ul li {
+        width: 228px;
+        height: 358px;
+        float: left;
+        border: 1px solid #eee;
+        margin: 0 12px 35px 0; }
+        .shops-list .shop-list-container ul li .info-container {
+          padding: 0 10px;
+          font-size: 12px; }
+          .shops-list .shop-list-container ul li .info-container p {
+            color: #999;
+            line-height: 24px; }
+            .shops-list .shop-list-container ul li .info-container p.name {
+              line-height: 20px;
+              height: 40px;
+              margin-top: 8px; }
+            .shops-list .shop-list-container ul li .info-container p a {
+              color: #333; }
+            .shops-list .shop-list-container ul li .info-container p strong {
+              color: #fc4607;
+              font-size: 20px;
+              font-weight: bold; }
+
+/*# sourceMappingURL=shops-list.css.map */
