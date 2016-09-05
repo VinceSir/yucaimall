@@ -1,4 +1,112 @@
+body{
+  background: #fafafa;
+}
 .us-business-container{
   width: 100%;
-  background-color: #fafafa;
+  background-color: #FFF;
+}
+
+/* 商家中心侧栏 */
+.us-business-sidebar{
+  width: 220px;
+  background-color: #fff;
+  padding-top:20px;
+  position: fixed;
+  left: 0;
+  top:80px;
+  height: 100%;
+
+  ul{
+    display: block;
+
+    li{
+      display: block;
+      vertical-align: middle;
+
+      .item-title{
+        margin-bottom:5px;
+      }
+      .item-container{
+        margin-bottom:10px;
+      }
+
+      a{
+        display: block;
+        line-height:34px;
+        font-size:12px;
+        color: #888;
+
+        &:hover,&.active{
+          border-left:2px solid #fc4607;
+          color: #fc4607;
+          padding-left:43px;
+          background: #fafafa;
+          text-decoration: none;
+        }
+      }
+      
+      h2{
+        display: block;
+        font-weight: bold;
+        font-size:14px;
+        line-height:34px;
+        color: #333;
+        background: url("../images/us-icon.png") no-repeat;
+        padding-right:10px;
+
+        &.com{
+          background-position: 20px 10px;
+        }
+
+        &.order{
+          background-position: 20px -16px;
+        }
+
+        &.refund{
+          background-position: 20px -45px;
+        }
+        &.statistics{
+          background-position: 20px -70px;
+        }
+
+        i{
+          display: inline-block;
+          float: right;
+          width: 10px;
+          height: 7px;
+          background: url("../images/us-icon.png") no-repeat 0px -107px;
+          margin-top:14px;
+        }
+      }
+      h2,a{
+        padding-left:45px;
+      }
+    }
+  }
+}
+
+
+.us-business-main{
+  background: #FFF;
+  padding-left:240px;
+
+  .us-business-center{
+    width: 100%;
+    background: #FFF;
+    padding-top:20px;
+  }
+}
+/*商家中心 面包屑导航*/
+.us-business-crumbs{
+  line-height:34px;
+  font-size:14px;
+
+  a,span{
+    color: #333;
+  }
+  em{
+    font-family: "宋体";
+    margin: 0 5px;
+    font-size:12px;
+  }
 }
