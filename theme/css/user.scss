@@ -1040,6 +1040,99 @@
       }
     }
 
+    // 退款管理
+    &.u-refund{
+      .back_list{
+        width: 960px;
+      }
+      .back_list .list_item{
+        border: 1px solid #d9d9d9;
+        margin-top: 20px;
+        overflow: hidden;
+        border-bottom:none;
+      }
+      .list_item{
+        margin-bottom:50px;
+      }
+      .list_item ul{
+        text-align: left;
+
+        div{
+          text-align: center;
+          display: block;
+          float: left;
+          font-size: 12px;
+          color: #333;
+          width: 80px;
+          &:nth-child(1){
+            width: 120px;
+          }
+          &:nth-child(2){
+            text-align: left;
+            width: 180px;
+          }
+          &:nth-child(3){
+            width: 138px;
+          }
+          &:nth-child(4),&:nth-child(5){
+            width: 80px;
+          }
+          &:nth-child(6),&:nth-child(7){
+            width:100px;
+          }
+        }
+
+        &.list_item_content{
+          div:nth-child(6),div:nth-child(7),div:nth-child(3),div:nth-child(2){
+            padding: 10px 0;
+            line-height:25px;
+            overflow: hidden;
+          }
+          div:nth-child(4),div:nth-child(5){
+            font-weight: bold;
+          }
+          div:nth-child(4),div:nth-child(5),div:nth-child(8){
+            color: #fc4607;
+          }
+        }
+
+        a{
+          color: #777;
+        }
+      }
+
+
+
+      .list_item .list_item_title{
+        background-color: #f1f1f1;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #d9d9d9;
+      }
+      .list_item_content li{
+        border-bottom: 1px solid #d9d9d9;
+        height: 70px;
+        line-height: 70px;
+      }
+      .list_item_foot{
+        margin-top:10px;
+      }
+      .list_item_foot .a_need{
+        background-color: #fc4607;
+        display: inline-block;
+        color: #fff;
+        font-size: 14px;
+        width: 80px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      .page-container{
+        padding: 20px 0;
+      }
+    }
+
     // 公共标题
     .page-title{
       border-bottom:1px solid #d9d9d9;
@@ -1051,6 +1144,7 @@
         font-weight: bold;
       }
     }
+
 
     // tab-title
     .tab-title{

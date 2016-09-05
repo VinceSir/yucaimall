@@ -12,6 +12,8 @@
 .clear{
   clear: both;
 }
+.outer {zoom:1;}    /*==for IE6/7 Maxthon2==*/
+.outer :after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}   /*==for FF/chrome/opera/IE8==*/
 
 *{
   font-family: "微软雅黑", Arial, "宋体";
@@ -462,4 +464,95 @@
 }
 
 
+/* 商家用户中 头部 和 侧栏*/
+.user-business-header{
+  height: 80px;
+  background-color: #fc4607;
+  width: 100%;
 
+  .fl{
+      padding: 21px;
+      height: 38px;
+  }
+
+  .logo{
+    width: 150px;
+    height: 44px;
+    display: block;
+    float: left;
+  }
+  .title{
+    line-height:30px;
+    float: left;
+    border-left:1px solid #FFF;
+    font-size:20px;
+    color: #FFF;
+    display: block;
+    float: left;
+    margin:7px 0 0 20px;
+    padding:0 10px;
+  }
+  
+  .nav{
+    float: left;
+    margin-left:50px;
+
+    li{
+      display: block;
+      float: left;
+      padding: 10px 0;
+      line-height:24px;
+      margin-right:30px;
+
+      a{
+        display: block;
+        color: #FFF;
+        line-height:24px;
+        font-size:16px;
+
+        i{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #FFF;
+          color: #fc4607;
+          text-align: center;
+          line-height:20px;
+          vertical-align: text-top;
+          font-size:12px;
+          margin-left:5px;
+        }
+      }
+    }
+  }
+  
+  img{
+    width: 150px;
+    height: 44px;
+  }
+  .fr{
+    line-height:80px;
+    padding: 0 20px;
+
+    &,a{
+      color: #FFF;
+    }
+    a{
+      margin-left:20px;
+    }
+  }
+}
+
+/* 商家中心侧栏 */
+.us-business-sidebar{
+  width: 220px;
+  float: left;
+  background-color: #fff;
+
+}
+
+/*商家中心 面包屑导航*/
+.us-business-crumbs{
+  
+}
