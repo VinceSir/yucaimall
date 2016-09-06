@@ -1,10 +1,12 @@
 @charset "UTF-8";
 body {
-  background: #fafafa; }
+  background: #fafafa;
+}
 
 .us-business-container {
   width: 100%;
-  background-color: #FFF; }
+  background-color: #FFF;
+}
 
 /* 商家中心侧栏 */
 .us-business-sidebar {
@@ -14,70 +16,87 @@ body {
   position: fixed;
   left: 0;
   top: 80px;
-  height: 100%; }
-  .us-business-sidebar ul {
-    display: block; }
-    .us-business-sidebar ul li {
-      display: block;
-      vertical-align: middle; }
-      .us-business-sidebar ul li .item-title {
-        margin-bottom: 5px; }
-      .us-business-sidebar ul li .item-container {
-        margin-bottom: 10px; }
-      .us-business-sidebar ul li a {
-        display: block;
-        line-height: 34px;
-        font-size: 12px;
-        color: #888; }
-        .us-business-sidebar ul li a:hover, .us-business-sidebar ul li a.active {
-          border-left: 2px solid #fc4607;
-          color: #fc4607;
-          padding-left: 43px;
-          background: #fafafa;
-          text-decoration: none; }
-      .us-business-sidebar ul li h2 {
-        display: block;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 34px;
-        color: #333;
-        background: url("../images/us-icon.png") no-repeat;
-        padding-right: 10px; }
-        .us-business-sidebar ul li h2.com {
-          background-position: 20px 10px; }
-        .us-business-sidebar ul li h2.order {
-          background-position: 20px -16px; }
-        .us-business-sidebar ul li h2.refund {
-          background-position: 20px -45px; }
-        .us-business-sidebar ul li h2.statistics {
-          background-position: 20px -70px; }
-        .us-business-sidebar ul li h2 i {
-          display: inline-block;
-          float: right;
-          width: 10px;
-          height: 7px;
-          background: url("../images/us-icon.png") no-repeat 0px -107px;
-          margin-top: 14px; }
-      .us-business-sidebar ul li h2, .us-business-sidebar ul li a {
-        padding-left: 45px; }
+  height: 100%;
+}
+.us-business-sidebar ul {
+  display: block;
+}
+.us-business-sidebar ul li {
+  display: block;
+  vertical-align: middle;
+}
+.us-business-sidebar ul li .item-title {
+  margin-bottom: 5px;
+}
+.us-business-sidebar ul li .item-container {
+  margin-bottom: 10px;
+}
+.us-business-sidebar ul li a {
+  display: block;
+  line-height: 34px;
+  font-size: 12px;
+  color: #888;
+}
+.us-business-sidebar ul li a:hover, .us-business-sidebar ul li a.active {
+  border-left: 2px solid #fc4607;
+  color: #fc4607;
+  padding-left: 43px;
+  background: #fafafa;
+  text-decoration: none;
+}
+.us-business-sidebar ul li h2 {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 34px;
+  color: #333;
+  background: url("../images/us-icon.png") no-repeat;
+  padding-right: 10px;
+}
+.us-business-sidebar ul li h2.com {
+  background-position: 20px 10px;
+}
+.us-business-sidebar ul li h2.order {
+  background-position: 20px -16px;
+}
+.us-business-sidebar ul li h2.refund {
+  background-position: 20px -45px;
+}
+.us-business-sidebar ul li h2.statistics {
+  background-position: 20px -70px;
+}
+.us-business-sidebar ul li h2 i {
+  display: inline-block;
+  float: right;
+  width: 10px;
+  height: 7px;
+  background: url("../images/us-icon.png") no-repeat 0px -107px;
+  margin-top: 14px;
+}
+.us-business-sidebar ul li h2, .us-business-sidebar ul li a {
+  padding-left: 45px;
+}
 
 .us-business-main {
   background: #FFF;
-  padding-left: 240px; }
-  .us-business-main .us-business-center {
-    width: 100%;
-    background: #FFF;
-    padding-top: 20px; }
+  padding-left: 240px;
+}
+.us-business-main .us-business-center {
+  width: 100%;
+  background: #FFF;
+  padding-top: 20px;
+}
 
 /*商家中心 面包屑导航*/
 .us-business-crumbs {
   line-height: 34px;
-  font-size: 14px; }
-  .us-business-crumbs a, .us-business-crumbs span {
-    color: #333; }
-  .us-business-crumbs em {
-    font-family: "宋体";
-    margin: 0 5px;
-    font-size: 12px; }
-
-/*# sourceMappingURL=us-business.css.map */
+  font-size: 14px;
+}
+.us-business-crumbs a, .us-business-crumbs span {
+  color: #333;
+}
+.us-business-crumbs em {
+  font-family: "宋体";
+  margin: 0 5px;
+  font-size: 12px;
+}
