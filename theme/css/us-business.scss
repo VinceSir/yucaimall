@@ -94,8 +94,13 @@ body{
   .us-business-center{
     width: 100%;
     padding-top:20px;
+
+    &.goods-container{
+      background: #FFF;
+    }
   }
 
+  //首页
   .us-b-home{
     width:100%;
 
@@ -215,6 +220,161 @@ body{
       }
     }
   }
+
+  // 添加商品
+
+  .add-goods-container{
+    overflow: hidden;
+    padding-left:10px;
+    width:1200px;
+
+    .add-goods-center{
+      ul{
+        display: block;
+        overflow: hidden;
+      }
+      li{
+        overflow: hidden;
+        margin-top: 20px;
+        display: block;
+
+        .list-title{
+          display: block;
+          float: left;
+          width: 120px;
+          text-align: right;
+          float: left;
+          font-size:14px;
+          line-height:32px;
+        }
+        .list-center{
+          float: left;
+          margin-left:10px;
+
+          input,select{
+            border-radius: 5px;
+            outline: none;
+            border:1px solid #ccc;
+          }
+
+          input{
+            padding: 0 10px;
+            height:30px;
+            line-height:30px;
+            width: 238px;
+          }
+          select{
+            padding: 0 5px;
+            height: 32px;
+            width: 260px;
+          }
+
+          p.error{
+            line-height:24px;
+            color: #f00;
+            font-size:14px;
+          }
+
+          #edit-info{
+            border: 1px solid #ccc;
+            width: 980px;
+            padding: 10px;
+          }
+        }
+
+      }
+      .upload-container{
+        .upload-item{
+          display: block;
+          float: left;
+          border: 1px solid #eee;
+          width: 108px;
+          height: 108px;
+          margin-right:10px;
+          margin-bottom:10px;
+          position: relative;
+
+          .clear-btn{
+            position: absolute;
+            right:0px;
+            top:0px;
+            background: url("../images/clear-btn-icon.png") no-repeat center center #ccc;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-size: 50%,50%;
+            display: none;
+            cursor: pointer;
+          }
+
+          &:hover{
+            .clear-btn{
+              display: block;
+            }
+          }
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .upload-btn{
+          background: url("../images/us-upload.jpg");
+          border: none;
+          width: 110px;
+          height: 110px;
+          float: left;
+          cursor: pointer;
+        }
+        p{
+          clear: both;
+          font-size:14px;
+          line-height:24px;
+        }
+      }
+    }
+
+    .main-button{
+      overflow: hidden;
+      margin: 50px 0 100px 130px;
+      
+      a{
+        color: #999;
+        line-height:30px;
+        font-size:14px;
+      }
+    }
+
+
+    .main-button input[type="button"]{
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+      margin-right:30px;
+    }
+    .main-button-red{
+      color: #fff;
+      background-color: #FC4607;
+      border: 1px solid #FC4607;
+    }
+    .main-button-pink{
+      color: #FC4607;
+      background-color: #FFF4F4;
+      border: 1px solid #FC4607;
+    }
+    .main-button-white{
+      color: #888;
+      background-color: #fff;
+      border: 1px solid #fff;
+    }
+
+  }
+
+
 }
 /*商家中心 面包屑导航*/
 .us-business-crumbs{

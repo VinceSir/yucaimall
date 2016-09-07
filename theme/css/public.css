@@ -423,6 +423,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 .user-business-header .fl {
   padding: 21px;
