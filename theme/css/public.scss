@@ -469,7 +469,9 @@
   height: 80px;
   background-color: #fc4607;
   width: 100%;
-
+  position: fixed;
+  top:0;
+  left: 0;
   .fl{
       padding: 21px;
       height: 38px;

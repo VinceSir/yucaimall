@@ -3,7 +3,6 @@ body{
 }
 .us-business-container{
   width: 100%;
-  background-color: #FFF;
 }
 
 /* 商家中心侧栏 */
@@ -15,6 +14,7 @@ body{
   left: 0;
   top:80px;
   height: 100%;
+  z-index:9999;
 
   ul{
     display: block;
@@ -87,13 +87,133 @@ body{
 
 
 .us-business-main{
-  background: #FFF;
   padding-left:240px;
+  padding-top:80px;
+  min-width:1660px;
 
   .us-business-center{
     width: 100%;
-    background: #FFF;
     padding-top:20px;
+  }
+
+  .us-b-home{
+    width:100%;
+
+    .page-title{
+      font-weight: bold;
+      font-size:14px;
+      color: #333;
+      line-height:34px;
+    }
+
+    .us-statistics{
+      background-color: #fff;
+      padding:20px;
+
+      .tops{
+        border-bottom:1px solid #eee;
+        padding-bottom:5px;
+        font-size:14px;
+        color: #333;
+
+        b{
+          font-weight: bold;
+        }
+
+        i{
+          display: inline-block;
+          width: 12px;
+          height: 14px;
+          background: url(../images/us-icon.png) no-repeat 0 -119px;
+          margin-right:10px;
+          vertical-align: middle;
+        }
+      }
+      .list{
+        padding-top:15px;
+
+        ul{
+          overflow: hidden;
+          display: block;
+
+          li{
+            float: left;
+            width: 25%;
+            font-size:12px;
+            line-height:20px;
+            margin: 5px 0;
+          }
+        }
+      }
+
+      &.sj{
+        margin-top:20px;
+
+        .tops{
+          i{
+            background: url(../images/us-icon.png) no-repeat 0 -145px;
+          }
+        }
+
+        .list{
+          li{
+            width: 25%;
+
+            p{
+              line-height:24px;
+              color: #333;
+            }
+
+            strong{
+              font-size:18px;
+              font-weight:bold;
+              color: #fc4607;
+            }
+            
+            span{
+              color: #999;
+              vertical-align: middle;
+            }
+
+            i{
+              display: inline-block;
+              width: 6px;
+              height: 10px;
+              vertical-align: middle;
+              background-image: url(../images/us-sj-top-icon.png);
+              margin-left:10px;
+            }
+          }
+        }
+      }
+    }
+
+    .chart-container{
+      margin-top:25px;
+      width: 100%;
+      overflow:hidden;
+
+      .fl{
+        width: 38%;
+      }
+      .fr{
+        width: 60%;
+      }
+      .fl,.fr{
+        background: #FFF;
+
+        .title{
+          border-bottom:1px solid #eee;
+          height: 40px;
+          line-height:40px;
+          padding: 0 10px;
+          font-weight: bold;
+          font-size:14px;
+          color: #333;
+          margin-bottom:15px;
+        }
+      }
+    }
   }
 }
 /*商家中心 面包屑导航*/

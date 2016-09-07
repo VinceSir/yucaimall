@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="theme/css/reset.css">
     <link rel="stylesheet" href="theme/css/public.css">
     <link rel="stylesheet" href="theme/css/us-business.css">
+    <script src="https://as.alipayobjects.com/g/datavis/g2/1.2.6/index.js"></script>
 </head>
 <body>
 <div class="user-business-header">
@@ -18,13 +19,12 @@
                 <li><a href="javascript:;">信息<i>12</i></a></li>
             </ul>
         </div>
-        <div class="fr">
-            哈哈哈哈哈 <a href="javascript:;">退出</a>
+        <div class="fr">哈哈哈哈哈 <a href="javascript:;">退出</a>
         </div>
     </div>
 </div>
 <!--商家 container-->
-<div class="us-business-container">
+<div class="us-business-container" style="min-width: 1920px;">
     <!--侧栏-->
     <div class="us-business-sidebar">
         <ul>
@@ -71,13 +71,143 @@
     <!--Main Center-->
     <div class="us-business-main">
         <div class="us-business-center">
-            <!--面包屑导航-->
-            <div class="us-business-crumbs">
-                <a href="javascript:;">卖家中心</a>
-                <em>&gt;</em>
-                <a href="javascript:;">商品管理</a>
-                <em>&gt;</em>
-                <span>添加商品</span>
+            <div class="us-b-home">
+                <div class="page-title">欢迎你</div>
+
+                <div class="us-statistics">
+                    <div class="tops"><i></i><b>当前账号</b>：15999967691</div>
+                    <div class="list">
+                        <ul>
+                            <li>出售中的商品数：80</li>
+                            <li>仓库中商品数：200</li>
+                            <li>已售馨的商品数：0</li>
+                            <li>代付款订单数：2 笔</li>
+                            <li>待发货订单数：8 笔</li>
+                            <li>待退/换货订单数：2 笔</li>
+                            <li>已完成订单数：55 笔</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="us-statistics sj">
+                    <div class="tops"><i></i><b>数据统计</b></div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <p>总数订单（笔）</p>
+                                <p><strong>190</strong></p>
+                                <p><span>环比增幅  0% </span> <i></i></p>
+                            </li>
+                            <li>
+                                <p>总消费金额（元）</p>
+                                <p><strong>43528.00</strong></p>
+                                <p><span>环比增幅  0%</span> <i></i></p>
+                            </li>
+                            <li>
+                                <p>本月订单（笔）</p>
+                                <p><strong>50</strong></p>
+                                <p><span>环比增幅  0%</span> <i></i></p>
+                            </li>
+                            <li>
+                                <p>本月消费金额（元）</p>
+                                <p><strong>4500.00</strong></p>
+                                <p><span>环比增幅  0%</span> <i></i></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="chart-container">
+                    <div class="fl">
+                        <div class="title">
+                            每月销量
+                        </div>
+                        <div id="c1"></div>
+                    </div>
+                    <div class="fr">
+                        <div class="title">
+                            每月销量
+                        </div>
+                        <div id="rxl"></div>
+                    </div>
+                </div>
+                <script>
+                    var ydata = [
+                        {genre: '1月', sold: 10},
+                        {genre: '2月', sold: 20},
+                        {genre: '3月', sold: 50},
+                        {genre: '4月', sold: 35},
+                        {genre: '5月', sold: 56},
+                        {genre: '6月', sold: 15},
+                        {genre: '7月', sold: 27},
+                        {genre: '8月', sold: 36},
+                        {genre: '9月', sold: 47},
+                        {genre: '10月', sold: 48},
+                        {genre: '11月', sold: 58},
+                        {genre: '12月', sold: 68}
+                    ];
+
+                    var rdata =[
+                        {genre: '1月1日', sold: 10},
+                        {genre: '1月2日', sold: 20},
+                        {genre: '1月3日', sold: 50},
+                        {genre: '1月4日', sold: 35},
+                        {genre: '1月5日', sold: 56},
+                        {genre: '1月6日', sold: 15},
+                        {genre: '1月7日', sold: 27},
+                        {genre: '1月8日', sold: 36},
+                        {genre: '1月9日', sold: 47},
+                        {genre: '1月10日', sold: 48},
+                        {genre: '1月11日', sold: 58},
+                        {genre: '1月12日', sold: 68},
+                        {genre: '1月13日', sold: 10},
+                        {genre: '1月14日', sold: 20},
+                        {genre: '1月15日', sold: 50},
+                        {genre: '1月16日', sold: 35},
+                        {genre: '1月17日', sold: 56},
+                        {genre: '1月18日', sold: 15},
+                        {genre: '1月19日', sold: 27},
+                        {genre: '1月20日', sold: 36},
+                        {genre: '1月21日', sold: 47},
+                        {genre: '1月22日', sold: 48},
+                        {genre: '1月23日', sold: 58},
+                        {genre: '1月24日', sold: 10},
+                        {genre: '1月25日', sold: 20},
+                        {genre: '1月26日', sold: 50},
+                        {genre: '1月27日', sold: 35},
+                        {genre: '1月28日', sold: 56},
+                        {genre: '1月29日', sold: 15},
+                        {genre: '1月30日', sold: 27},
+                        {genre: '1月31日', sold: 36}
+                    ];
+
+                    showG2('c1',ydata,620,360,'每月销量');
+                    showG2('rxl',rdata,860,360,'每日销量');
+
+                    function showG2(id,data,w,h,name) {
+                        // Step 1: 创建 Chart 对象
+                        var chart = new G2.Chart({
+                            id: id, // 指定图表容器 ID
+                            width : w, // 指定图表宽度
+                            height : h // 指定图表高度
+                        });
+                        // Step 2: 载入数据源
+                        chart.source(data, {
+                            genre: {
+                                alias: ' ' // 列定义，定义该属性显示的别名
+                            },
+                            sold: {
+                                alias: name
+                            }
+                        });
+                        // Step 3：创建图形语法，绘制柱状图，由 genre 和 sold 两个属性决定图形位置，genre 映射至 x 轴，sold 映射至 y 轴
+                        chart.interval().position('genre*sold').color('genre')
+                        // Step 4: 渲染图表
+                        chart.render();
+                    }
+                </script>
+
             </div>
         </div>
     </div>
